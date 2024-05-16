@@ -3,7 +3,7 @@ from sanic_cors import CORS
 from sanic import request as rq
 import publish_hesderim_api
 
-app = Sanic("testppr")
+app = Sanic("testppr21")
 CORS(app, resources=r'/*', origins="*",
      methods=["GET", "POST","DELETE", "HEAD", "OPTIONS"])
 app.config.PROXIES_COUNT = 1  # Set the number of trusted proxy servers
@@ -13,12 +13,12 @@ publish_hesderim_api = publish_hesderim_api.Publish_Hsederim()
 def is_exists(id, environment):
     ws = publish_hesderim_api.getWorkSpace
 
-@app.route('/hesderim_21/', methods=['POST'])
-async def publish_hesder21(rq):
+@app.route('/hesderim_2_1/', methods=['POST'])
+async def publish_hesder(rq):
     try:
         id = rq.args.get('id')
         environment = rq.args.get('env')
-        print ("env:", environment,"ID:",id)
+        print ("@POST","env:", environment,"ID:",id)
         
         response_object = publish_hesderim_api.publish_hesder(id, environment)
         #print (response_object)
@@ -28,12 +28,12 @@ async def publish_hesder21(rq):
         return response.text(ex.args[0])
 
 
-@app.route('/hesderim_21/', methods=['GET'])
-async def publish_hesder21(rq):
+@app.route('/hesderim_2_1/', methods=['GET'])
+async def check_publish_hesder(rq):
     try:
         id = rq.args.get('id')
         environment = rq.args.get('env')
-        print ("env:", environment,"ID:",id)
+        print ("@GET", "env:", environment,"ID:",id)
         
         response_object = publish_hesderim_api.check_publish_hesder(id, environment)
         #print (response_object)
@@ -85,4 +85,4 @@ def verifyNativ(rq):
 '''
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8002, debug=True, auto_reload=True)
+    app.run(host='127.0.0.1', port=8001, debug=True, auto_reload=True)

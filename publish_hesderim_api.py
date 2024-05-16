@@ -732,10 +732,6 @@ class Publish_Hsederim(object):
                                         'layerPath': layerPath,
                                         'message': msg,
                                         'GeoServer': {
-                                            'Workspace': {'status': ws_status,
-                                                          'message': ws_msg},
-                                            'CoverageStore': {'status': cs_status,
-                                                              'message': cs_msg},
                                             'CoverageLayer': {'status': cl_status,
                                                               'message': cl_msg},
                                         }}
