@@ -580,3 +580,847 @@ One of your worker processes terminated before startup was completed. Please sol
 2024-05-16 18:08:11,121 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[5512][0m
 2024-05-16 18:08:11,125 - INFO - <Server sockets=(<asyncio.TransportSocket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
 2024-05-16 18:08:11,133 - INFO - Starting worker [5512]
+2024-05-16 18:09:44,163 - WARNING - Executing <Task pending name='Task-4' coro=<Sanic._prep_task.<locals>.do() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py:1650> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001B716EE5790>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py:1677> took 0.141 seconds
+2024-05-16 18:12:14,965 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56014): <socket.socket fd=864, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56014)>
+2024-05-16 18:12:14,981 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:12:15,049 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:12:15,051 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:15,501 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:12:15,512 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:15,527 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:12:15,528 - INFO - ws exists
+2024-05-16 18:12:15,530 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:15,541 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:12:15,542 - INFO - coveragestore exists
+2024-05-16 18:12:15,543 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:15,554 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:12:15,554 - INFO - coverage layer exists
+2024-05-16 18:12:15,555 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:12:15,557 - INFO - 
+2024-05-16 18:12:15,559 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001B716EE5B50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.578 seconds
+2024-05-16 18:12:23,160 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:12:23,165 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:12:23,166 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:23,626 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:12:23,637 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:23,654 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:12:23,654 - INFO - ws exists
+2024-05-16 18:12:23,656 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:23,670 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:12:23,671 - INFO - coveragestore exists
+2024-05-16 18:12:23,672 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:23,686 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:12:23,687 - INFO - coverage layer exists
+2024-05-16 18:12:23,688 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:12:23,689 - INFO - 
+2024-05-16 18:12:23,691 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001B716EE5460>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.532 seconds
+2024-05-16 18:12:49,315 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:12:49,348 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:12:49,349 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:49,788 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:12:49,799 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:49,814 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:12:49,815 - INFO - ws exists
+2024-05-16 18:12:49,817 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:49,830 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:12:49,830 - INFO - coveragestore exists
+2024-05-16 18:12:49,832 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:12:49,940 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:12:49,941 - INFO - coverage layer exists
+2024-05-16 18:12:49,942 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:12:49,943 - INFO - 
+2024-05-16 18:12:49,945 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001B716EE5490>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.640 seconds
+2024-05-16 18:14:59,308 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[5512][0m
+2024-05-16 18:14:59,313 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[5512][0m
+2024-05-16 18:14:59,314 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:15:00,375 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:15:00,397 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11060][0m
+2024-05-16 18:15:00,407 - INFO - <Server sockets=(<asyncio.TransportSocket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:15:00,410 - INFO - Starting worker [11060]
+2024-05-16 18:16:52,664 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11060][0m
+2024-05-16 18:16:52,664 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11060][0m
+2024-05-16 18:16:52,664 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:16:53,594 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:16:53,608 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[4348][0m
+2024-05-16 18:16:53,614 - INFO - <Server sockets=(<asyncio.TransportSocket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:16:53,619 - INFO - Starting worker [4348]
+2024-05-16 18:16:57,973 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56073): <socket.socket fd=796, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56073)>
+2024-05-16 18:16:57,992 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:16:58,091 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:16:58,093 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:16:58,530 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:16:58,541 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:16:58,556 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:16:58,556 - INFO - ws exists
+2024-05-16 18:16:58,558 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:16:58,569 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:16:58,569 - INFO - coveragestore exists
+2024-05-16 18:16:58,571 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:16:58,583 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:16:58,583 - INFO - coverage layer exists
+2024-05-16 18:16:58,584 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:16:58,585 - INFO - 
+2024-05-16 18:16:58,587 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001C3C9715F10>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.593 seconds
+2024-05-16 18:17:02,438 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:17:02,443 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:17:02,444 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:17:02,807 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:17:02,819 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:17:02,828 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:17:02,829 - INFO - coverage layer exists
+2024-05-16 18:17:02,829 - ERROR - name 'ws_status' is not defined
+Traceback (most recent call last):
+  File "d:\Teum4U\Hesderim_2_1\publish_hesderim_api.py", line 725, in check_publish_hesder
+    if ws_status == 500 or cs_status == 500 or cl_status == 500:
+NameError: name 'ws_status' is not defined
+2024-05-16 18:17:02,831 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:17:02,832 - INFO - 
+2024-05-16 18:17:02,834 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001C3C97153D0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.390 seconds
+2024-05-16 18:17:43,369 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[4348][0m
+2024-05-16 18:17:43,370 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[4348][0m
+2024-05-16 18:17:43,371 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:17:44,514 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:17:44,529 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12920][0m
+2024-05-16 18:17:44,533 - INFO - <Server sockets=(<asyncio.TransportSocket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:17:44,540 - INFO - Starting worker [12920]
+2024-05-16 18:17:46,129 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=592, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56098): <socket.socket fd=612, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56098)>
+2024-05-16 18:17:46,145 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:17:46,203 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:17:46,205 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:17:46,838 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:17:46,863 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:17:46,881 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:17:46,882 - INFO - coverage layer exists
+2024-05-16 18:17:46,883 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:17:46,896 - INFO - 
+2024-05-16 18:17:46,900 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000210FEEF53A0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.750 seconds
+2024-05-16 18:17:55,443 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:17:55,447 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:17:55,449 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:17:55,897 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:17:55,910 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:17:55,923 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:17:55,923 - INFO - coverage layer exists
+2024-05-16 18:17:55,924 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:17:55,925 - INFO - 
+2024-05-16 18:17:55,927 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000210FEEF5730>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.484 seconds
+2024-05-16 18:18:05,860 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:18:05,888 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:18:05,889 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:18:06,415 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:18:06,426 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:18:06,442 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:18:06,443 - INFO - ws exists
+2024-05-16 18:18:06,444 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:18:06,459 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:18:06,460 - INFO - coveragestore exists
+2024-05-16 18:18:06,461 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:18:06,475 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:18:06,476 - INFO - coverage layer exists
+2024-05-16 18:18:06,477 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:18:06,478 - INFO - 
+2024-05-16 18:18:06,480 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000210FEEF5F70>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.625 seconds
+2024-05-16 18:18:49,770 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12920][0m
+2024-05-16 18:18:49,771 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12920][0m
+2024-05-16 18:18:49,772 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:18:54,950 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:18:55,017 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[1840][0m
+2024-05-16 18:18:55,021 - INFO - <Server sockets=(<asyncio.TransportSocket fd=840, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:18:55,060 - INFO - Starting worker [1840]
+2024-05-16 18:20:22,411 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[1840][0m
+2024-05-16 18:20:22,411 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[1840][0m
+2024-05-16 18:20:22,411 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:20:23,307 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:20:23,322 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10272][0m
+2024-05-16 18:20:23,322 - INFO - <Server sockets=(<asyncio.TransportSocket fd=972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:20:23,338 - INFO - Starting worker [10272]
+2024-05-16 18:22:01,919 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10272][0m
+2024-05-16 18:22:01,935 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10272][0m
+2024-05-16 18:22:01,935 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:22:03,165 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:22:03,180 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10092][0m
+2024-05-16 18:22:03,197 - INFO - <Server sockets=(<asyncio.TransportSocket fd=664, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:22:03,209 - INFO - Starting worker [10092]
+2024-05-16 18:22:07,388 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=664, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56188): <socket.socket fd=560, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56188)>
+2024-05-16 18:22:07,522 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:07,867 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:07,870 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:08,000 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:08,001 - INFO - coverage layer exists
+2024-05-16 18:22:08,002 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:08,003 - INFO - 
+2024-05-16 18:22:08,005 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000212D4554E50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.484 seconds
+2024-05-16 18:22:10,632 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:10,648 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:10,651 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:10,665 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:10,666 - INFO - coverage layer exists
+2024-05-16 18:22:10,666 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:10,668 - INFO - 
+2024-05-16 18:22:12,375 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:12,378 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:12,380 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:12,392 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:12,393 - INFO - coverage layer exists
+2024-05-16 18:22:12,394 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:12,395 - INFO - 
+2024-05-16 18:22:16,911 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:16,941 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:16,943 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:17,388 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:22:17,401 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:17,415 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:22:17,415 - INFO - ws exists
+2024-05-16 18:22:17,416 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:17,428 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:22:17,429 - INFO - coveragestore exists
+2024-05-16 18:22:17,430 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:17,442 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:17,442 - INFO - coverage layer exists
+2024-05-16 18:22:17,444 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:17,445 - INFO - 
+2024-05-16 18:22:17,447 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000212D43707F0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.532 seconds
+2024-05-16 18:22:18,590 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:18,595 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:18,596 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:18,960 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:22:18,972 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:18,980 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:22:18,981 - INFO - ws exists
+2024-05-16 18:22:18,982 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:18,990 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:22:18,990 - INFO - coveragestore exists
+2024-05-16 18:22:18,992 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:19,000 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:19,000 - INFO - coverage layer exists
+2024-05-16 18:22:19,001 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:19,002 - INFO - 
+2024-05-16 18:22:19,005 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000212D4370610>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.422 seconds
+2024-05-16 18:22:20,166 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:20,171 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:20,172 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:20,601 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:22:20,612 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:20,621 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:22:20,621 - INFO - ws exists
+2024-05-16 18:22:20,622 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:20,628 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:22:20,628 - INFO - coveragestore exists
+2024-05-16 18:22:20,630 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:20,638 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:20,638 - INFO - coverage layer exists
+2024-05-16 18:22:20,639 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:20,640 - INFO - 
+2024-05-16 18:22:20,641 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000212D4370E50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.485 seconds
+2024-05-16 18:22:28,388 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:22:28,392 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:22:28,394 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:22:28,586 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:22:28,587 - INFO - coverage layer exists
+2024-05-16 18:22:28,588 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:28,589 - INFO - 
+2024-05-16 18:22:28,592 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000212D43709A0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.219 seconds
+2024-05-16 18:22:48,858 - INFO - Hesderim - id: 9999, env: ppr
+2024-05-16 18:22:48,860 - ERROR - No Hesder found under the ID:9999
+2024-05-16 18:22:48,861 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:22:48,862 - INFO - 
+2024-05-16 18:23:33,323 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10092][0m
+2024-05-16 18:23:33,324 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10092][0m
+2024-05-16 18:23:33,324 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:23:35,043 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:23:35,064 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2372][0m
+2024-05-16 18:23:35,084 - INFO - <Server sockets=(<asyncio.TransportSocket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:23:35,084 - INFO - Starting worker [2372]
+2024-05-16 18:24:03,042 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2372][0m
+2024-05-16 18:24:03,043 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2372][0m
+2024-05-16 18:24:03,043 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:24:04,161 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:24:04,175 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6508][0m
+2024-05-16 18:24:04,180 - INFO - <Server sockets=(<asyncio.TransportSocket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:24:04,187 - INFO - Starting worker [6508]
+2024-05-16 18:24:31,112 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6508][0m
+2024-05-16 18:24:31,112 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6508][0m
+2024-05-16 18:24:31,112 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:24:31,961 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:24:31,977 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11344][0m
+2024-05-16 18:24:31,993 - INFO - <Server sockets=(<asyncio.TransportSocket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:24:31,993 - INFO - Starting worker [11344]
+2024-05-16 18:24:35,087 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56242): <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56242)>
+2024-05-16 18:24:35,101 - INFO - Hesderim - id: 9999, env: ppr
+2024-05-16 18:24:35,161 - ERROR - No Hesder found under the ID:9999
+2024-05-16 18:24:35,163 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:24:35,164 - INFO - 
+2024-05-16 18:25:55,892 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11344][0m
+2024-05-16 18:25:55,893 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11344][0m
+2024-05-16 18:25:55,894 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:25:57,363 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:25:57,378 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2132][0m
+2024-05-16 18:25:57,383 - INFO - <Server sockets=(<asyncio.TransportSocket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:25:57,392 - INFO - Starting worker [2132]
+2024-05-16 18:25:58,733 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56263): <socket.socket fd=732, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56263)>
+2024-05-16 18:25:58,747 - INFO - Hesderim - id: 9999, env: ppr
+2024-05-16 18:25:58,800 - ERROR - No Hesder found under the ID:9999
+2024-05-16 18:25:58,802 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:25:58,804 - INFO - 
+2024-05-16 18:26:44,973 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:26:44,982 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:26:44,984 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:26:45,114 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:26:45,114 - INFO - coverage layer exists
+2024-05-16 18:26:45,116 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:26:45,117 - INFO - 
+2024-05-16 18:26:45,119 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000231BC704DF0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.157 seconds
+2024-05-16 18:27:33,294 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:27:33,324 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:27:33,326 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:27:33,783 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:27:33,794 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:27:33,808 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:27:33,808 - INFO - ws exists
+2024-05-16 18:27:33,810 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:27:33,822 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:27:33,822 - INFO - coveragestore exists
+2024-05-16 18:27:33,824 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:27:33,836 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:27:33,836 - INFO - coverage layer exists
+2024-05-16 18:27:33,837 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:27:33,838 - INFO - 
+2024-05-16 18:27:33,841 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000231BC704760>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.547 seconds
+2024-05-16 18:27:45,606 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:27:45,617 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:27:45,618 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:27:45,970 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:27:45,972 - INFO - coverage layer exists
+2024-05-16 18:27:45,973 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:27:45,974 - INFO - 
+2024-05-16 18:27:45,976 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000231BC690610>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.375 seconds
+2024-05-16 18:29:58,763 - DEBUG - KeepAlive Timeout. Closing connection.
+2024-05-16 18:30:06,371 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56316): <socket.socket fd=672, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56316)>
+2024-05-16 18:30:06,382 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:30:06,407 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:30:06,410 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:30:06,539 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:30:06,539 - INFO - coverage layer exists
+2024-05-16 18:30:06,541 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:30:06,542 - INFO - 
+2024-05-16 18:30:06,549 - WARNING - Executing <Task pending name='Task-9' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000231BC690F40>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.171 seconds
+2024-05-16 18:30:17,448 - INFO - Hesderim - id: 9999, env: ppr
+2024-05-16 18:30:17,453 - ERROR - No Hesder found under the ID:9999
+2024-05-16 18:30:17,467 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:30:17,468 - INFO - 
+2024-05-16 18:30:52,336 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2132][0m
+2024-05-16 18:30:52,336 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2132][0m
+2024-05-16 18:30:52,336 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:30:53,448 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:30:53,462 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3640][0m
+2024-05-16 18:30:53,467 - INFO - <Server sockets=(<asyncio.TransportSocket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:30:53,475 - INFO - Starting worker [3640]
+2024-05-16 18:30:54,770 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56366): <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56366)>
+2024-05-16 18:30:54,786 - INFO - Hesderim - id: 9999, env: ppr
+2024-05-16 18:30:54,840 - ERROR - No Hesder found under the ID:9999
+2024-05-16 18:30:54,844 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:30:54,845 - INFO - 
+2024-05-16 18:31:02,156 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:31:02,169 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:31:02,171 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:31:02,309 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:31:02,310 - INFO - coverage layer exists
+2024-05-16 18:31:02,310 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:31:02,312 - INFO - 
+2024-05-16 18:31:02,313 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x0000029662764D60>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.156 seconds
+2024-05-16 18:34:40,317 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: testppr21                 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 18:34:41,263 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:34:41,268 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 18:34:41,268 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:34:41,323 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-16 18:34:42,519 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:34:42,519 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11288][0m
+2024-05-16 18:34:42,535 - INFO - <Server sockets=(<asyncio.TransportSocket fd=884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:34:42,535 - INFO - Starting worker [11288]
+2024-05-16 18:34:42,566 - DEBUG - Using proactor: IocpProactor
+2024-05-16 18:34:44,536 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56410): <socket.socket fd=892, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56410)>
+2024-05-16 18:34:44,552 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:34:44,615 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:34:44,617 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:34:44,741 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:34:44,742 - INFO - coverage layer exists
+2024-05-16 18:34:44,742 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:34:44,744 - INFO - 
+2024-05-16 18:34:44,746 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x0000021283CD3DC0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.204 seconds
+2024-05-16 18:35:41,751 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11288][0m
+2024-05-16 18:35:41,751 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11288][0m
+2024-05-16 18:35:41,751 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:35:42,862 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:35:42,878 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11596][0m
+2024-05-16 18:35:42,882 - INFO - <Server sockets=(<asyncio.TransportSocket fd=868, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:35:42,890 - INFO - Starting worker [11596]
+2024-05-16 18:35:43,650 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=868, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56424): <socket.socket fd=880, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56424)>
+2024-05-16 18:35:43,671 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:35:43,736 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:35:43,738 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:35:43,857 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:35:43,858 - INFO - coverage layer exists
+2024-05-16 18:35:43,859 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:35:43,862 - INFO - 
+2024-05-16 18:35:43,863 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001B4A6864DC0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.188 seconds
+2024-05-16 18:36:11,736 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11596][0m
+2024-05-16 18:36:11,736 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11596][0m
+2024-05-16 18:36:11,736 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:36:12,750 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:36:12,760 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[7452][0m
+2024-05-16 18:36:12,760 - INFO - <Server sockets=(<asyncio.TransportSocket fd=840, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:36:12,776 - INFO - Starting worker [7452]
+2024-05-16 18:36:12,850 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[7452][0m
+2024-05-16 18:36:12,851 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[7452][0m
+2024-05-16 18:36:12,852 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:36:13,742 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:36:13,772 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8296][0m
+2024-05-16 18:36:13,779 - INFO - <Server sockets=(<asyncio.TransportSocket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:36:13,789 - INFO - Starting worker [8296]
+2024-05-16 18:36:17,045 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56438): <socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56438)>
+2024-05-16 18:36:17,067 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:36:17,135 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:36:17,138 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:36:17,250 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:36:17,251 - INFO - coverage layer exists
+2024-05-16 18:36:17,252 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:36:17,253 - INFO - 
+2024-05-16 18:36:17,255 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x0000020920844DC0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.188 seconds
+2024-05-16 18:36:30,912 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:36:30,921 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:36:30,930 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:36:30,931 - INFO - 
+2024-05-16 18:38:28,157 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8296][0m
+2024-05-16 18:38:28,157 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8296][0m
+2024-05-16 18:38:28,157 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:38:29,110 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:38:29,125 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[7012][0m
+2024-05-16 18:38:29,130 - INFO - <Server sockets=(<asyncio.TransportSocket fd=964, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:38:29,138 - INFO - Starting worker [7012]
+2024-05-16 18:38:32,897 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=964, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56466): <socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56466)>
+2024-05-16 18:38:32,912 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:38:32,975 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:38:32,978 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:38:32,978 - INFO - 
+2024-05-16 18:38:38,178 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:38:38,190 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:38:38,202 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:38:38,347 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:38:38,348 - INFO - coverage layer exists
+2024-05-16 18:38:38,349 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:38:38,351 - INFO - 
+2024-05-16 18:38:38,353 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000274044B4D60>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.172 seconds
+2024-05-16 18:39:58,230 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[7012][0m
+2024-05-16 18:39:58,242 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[7012][0m
+2024-05-16 18:39:58,244 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:39:59,338 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:39:59,354 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12372][0m
+2024-05-16 18:39:59,359 - INFO - <Server sockets=(<asyncio.TransportSocket fd=908, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:39:59,367 - INFO - Starting worker [12372]
+2024-05-16 18:40:01,434 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=908, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56494): <socket.socket fd=748, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56494)>
+2024-05-16 18:40:01,451 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:40:01,525 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:40:01,528 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:40:01,669 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:40:01,670 - INFO - coverage layer exists
+2024-05-16 18:40:01,671 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:40:01,672 - INFO - 
+2024-05-16 18:40:01,674 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000218F6664DC0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.234 seconds
+2024-05-16 18:40:35,494 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12372][0m
+2024-05-16 18:40:35,494 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12372][0m
+2024-05-16 18:40:35,494 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:40:36,376 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:40:36,392 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[4680][0m
+2024-05-16 18:40:36,392 - INFO - <Server sockets=(<asyncio.TransportSocket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:40:36,392 - INFO - Starting worker [4680]
+2024-05-16 18:40:39,455 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56507): <socket.socket fd=900, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56507)>
+2024-05-16 18:40:39,470 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:40:39,538 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:40:39,540 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:40:39,651 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:40:39,652 - INFO - coverage layer exists
+2024-05-16 18:40:39,653 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:40:39,654 - INFO - 
+2024-05-16 18:40:39,656 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x0000025C4E923CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.203 seconds
+2024-05-16 18:40:54,042 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[4680][0m
+2024-05-16 18:40:54,043 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[4680][0m
+2024-05-16 18:40:54,044 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:40:54,941 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:40:54,957 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11552][0m
+2024-05-16 18:40:54,973 - INFO - <Server sockets=(<asyncio.TransportSocket fd=872, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:40:54,973 - INFO - Starting worker [11552]
+2024-05-16 18:40:58,284 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=872, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56517): <socket.socket fd=856, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56517)>
+2024-05-16 18:40:58,302 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:40:58,364 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:40:58,368 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:40:58,489 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:40:58,490 - INFO - coverage layer exists
+2024-05-16 18:40:58,491 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:40:58,492 - INFO - 
+2024-05-16 18:40:58,494 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001F863463CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.188 seconds
+2024-05-16 18:41:43,384 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11552][0m
+2024-05-16 18:41:43,384 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11552][0m
+2024-05-16 18:41:43,384 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:41:44,475 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:41:44,492 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6244][0m
+2024-05-16 18:41:44,496 - INFO - <Server sockets=(<asyncio.TransportSocket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:41:44,506 - INFO - Starting worker [6244]
+2024-05-16 18:41:45,704 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56539): <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56539)>
+2024-05-16 18:41:45,718 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:41:45,782 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:41:45,784 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:41:45,898 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:41:45,899 - INFO - coverage layer exists
+2024-05-16 18:41:45,900 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:41:45,901 - INFO - 
+2024-05-16 18:41:45,902 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001C369704CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.187 seconds
+2024-05-16 18:42:32,881 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6244][0m
+2024-05-16 18:42:32,881 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6244][0m
+2024-05-16 18:42:32,897 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:42:33,796 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:42:33,811 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8580][0m
+2024-05-16 18:42:33,817 - INFO - <Server sockets=(<asyncio.TransportSocket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:42:33,824 - INFO - Starting worker [8580]
+2024-05-16 18:42:36,071 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=848, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56564): <socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56564)>
+2024-05-16 18:42:36,088 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:42:36,284 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:42:36,288 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:42:36,423 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:42:36,424 - INFO - coverage layer exists
+2024-05-16 18:42:36,427 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:42:36,428 - INFO - 
+2024-05-16 18:42:36,431 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000002A6E3684CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.343 seconds
+2024-05-16 18:43:48,716 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8580][0m
+2024-05-16 18:43:48,717 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8580][0m
+2024-05-16 18:43:48,718 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:43:50,051 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:43:50,094 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8644][0m
+2024-05-16 18:43:50,249 - INFO - <Server sockets=(<asyncio.TransportSocket fd=844, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:43:50,261 - INFO - Starting worker [8644]
+2024-05-16 18:43:54,542 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=844, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56589): <socket.socket fd=860, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56589)>
+2024-05-16 18:43:54,555 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:43:54,640 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:43:54,642 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:43:55,238 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-16 18:43:55,248 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:43:55,263 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-16 18:43:55,264 - INFO - ws exists
+2024-05-16 18:43:55,265 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:43:55,276 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-16 18:43:55,277 - INFO - coveragestore exists
+2024-05-16 18:43:55,278 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:43:55,289 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:43:55,289 - INFO - coverage layer exists
+2024-05-16 18:43:55,291 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:43:55,292 - INFO - 
+2024-05-16 18:43:55,294 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x0000025E792B41F0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.735 seconds
+2024-05-16 18:44:47,987 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8644][0m
+2024-05-16 18:44:47,987 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8644][0m
+2024-05-16 18:44:47,987 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:44:48,866 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:44:48,882 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3932][0m
+2024-05-16 18:44:48,886 - INFO - <Server sockets=(<asyncio.TransportSocket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:44:48,893 - INFO - Starting worker [3932]
+2024-05-16 18:44:55,123 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56613): <socket.socket fd=804, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56613)>
+2024-05-16 18:44:55,137 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:44:55,209 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:44:55,211 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:44:55,321 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:44:55,322 - INFO - coverage layer exists
+2024-05-16 18:44:55,323 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:44:55,324 - INFO - 
+2024-05-16 18:44:55,326 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x0000024803CE4D60>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.187 seconds
+2024-05-16 18:45:17,618 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3932][0m
+2024-05-16 18:45:17,619 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3932][0m
+2024-05-16 18:45:17,619 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:45:18,754 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:45:18,769 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11216][0m
+2024-05-16 18:45:18,773 - INFO - <Server sockets=(<asyncio.TransportSocket fd=840, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:45:18,781 - INFO - Starting worker [11216]
+2024-05-16 18:45:19,380 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=840, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56623): <socket.socket fd=884, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56623)>
+2024-05-16 18:45:19,400 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:45:19,471 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:45:19,476 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:45:19,589 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:45:19,589 - INFO - coverage layer exists
+2024-05-16 18:45:19,590 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:45:19,591 - INFO - 
+2024-05-16 18:45:19,593 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001FCEE4A4CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.188 seconds
+2024-05-16 18:45:28,446 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:45:28,447 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:45:28,449 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:45:28,450 - INFO - 
+2024-05-16 18:45:49,692 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:45:49,703 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:45:49,706 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:45:49,835 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:45:49,836 - INFO - coverage layer exists
+2024-05-16 18:45:49,837 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:45:49,838 - INFO - 
+2024-05-16 18:45:49,840 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001FCEE4A4190>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.157 seconds
+2024-05-16 18:47:03,952 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11216][0m
+2024-05-16 18:47:03,952 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11216][0m
+2024-05-16 18:47:03,952 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:47:05,149 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:47:05,166 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[5408][0m
+2024-05-16 18:47:05,171 - INFO - <Server sockets=(<asyncio.TransportSocket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:47:05,180 - INFO - Starting worker [5408]
+2024-05-16 18:47:06,635 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=496, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56671): <socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56671)>
+2024-05-16 18:47:06,649 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:47:06,712 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:47:06,714 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:47:06,826 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:47:06,827 - INFO - coverage layer exists
+2024-05-16 18:47:06,828 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:47:06,830 - INFO - 
+2024-05-16 18:47:06,831 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000202B8A74CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.172 seconds
+2024-05-16 18:47:11,189 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:47:11,191 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:47:11,192 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:47:11,193 - INFO - 
+2024-05-16 18:48:28,742 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[5408][0m
+2024-05-16 18:48:28,742 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[5408][0m
+2024-05-16 18:48:28,742 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:48:29,601 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:48:29,614 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12204][0m
+2024-05-16 18:48:29,618 - INFO - <Server sockets=(<asyncio.TransportSocket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:48:29,626 - INFO - Starting worker [12204]
+2024-05-16 18:48:32,367 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56705): <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56705)>
+2024-05-16 18:48:32,382 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:48:32,438 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:48:32,439 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:48:32,441 - INFO - 
+2024-05-16 18:48:38,181 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:48:38,192 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:48:38,196 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:48:38,344 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:48:38,345 - INFO - coverage layer exists
+2024-05-16 18:48:38,346 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:48:38,347 - INFO - 
+2024-05-16 18:48:38,350 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001FF1E8F4C70>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.172 seconds
+2024-05-16 18:51:02,427 - DEBUG - KeepAlive Timeout. Closing connection.
+2024-05-16 18:51:11,526 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=548, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56740): <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56740)>
+2024-05-16 18:51:11,538 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:51:11,555 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:51:11,557 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:51:11,558 - INFO - 
+2024-05-16 18:51:45,618 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12204][0m
+2024-05-16 18:51:45,618 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12204][0m
+2024-05-16 18:51:45,618 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 18:51:46,564 - DEBUG - Using selector: SelectSelector
+2024-05-16 18:51:46,581 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2544][0m
+2024-05-16 18:51:46,585 - INFO - <Server sockets=(<asyncio.TransportSocket fd=832, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 18:51:46,592 - INFO - Starting worker [2544]
+2024-05-16 18:51:52,599 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=832, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56749): <socket.socket fd=852, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56749)>
+2024-05-16 18:51:52,613 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 18:51:52,681 - ERROR - No Hesder found under the ID:41899
+2024-05-16 18:51:52,683 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:51:52,684 - INFO - 
+2024-05-16 18:52:01,064 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 18:52:01,078 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 18:52:01,080 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 18:52:01,221 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 18:52:01,222 - INFO - coverage layer exists
+2024-05-16 18:52:01,223 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 18:52:01,224 - INFO - 
+2024-05-16 18:52:01,226 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001970BBE4C40>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.157 seconds
+2024-05-16 18:54:22,605 - DEBUG - KeepAlive Timeout. Closing connection.
+2024-05-16 19:10:43,223 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2544][0m
+2024-05-16 19:10:43,223 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[2544][0m
+2024-05-16 19:10:43,223 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:10:44,106 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:10:44,120 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11064][0m
+2024-05-16 19:10:44,125 - INFO - <Server sockets=(<asyncio.TransportSocket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:10:44,133 - INFO - Starting worker [11064]
+2024-05-16 19:10:54,145 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11064][0m
+2024-05-16 19:10:54,145 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11064][0m
+2024-05-16 19:10:54,145 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:10:55,307 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:10:55,323 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6000][0m
+2024-05-16 19:10:55,327 - INFO - <Server sockets=(<asyncio.TransportSocket fd=932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:10:55,329 - INFO - Starting worker [6000]
+2024-05-16 19:10:57,384 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=932, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56896): <socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56896)>
+2024-05-16 19:10:57,398 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:10:57,469 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:10:57,472 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:10:57,596 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:10:57,597 - INFO - coverage layer exists
+2024-05-16 19:10:57,598 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:10:57,600 - INFO - 
+2024-05-16 19:10:57,601 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001A903CB4CD0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.203 seconds
+2024-05-16 19:11:01,446 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 19:11:01,448 - ERROR - No Hesder found under the ID:41899
+2024-05-16 19:11:01,449 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:11:01,450 - INFO - 
+2024-05-16 19:13:27,433 - DEBUG - KeepAlive Timeout. Closing connection.
+2024-05-16 19:14:52,466 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6000][0m
+2024-05-16 19:14:52,466 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6000][0m
+2024-05-16 19:14:52,466 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:14:53,444 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:14:53,460 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11616][0m
+2024-05-16 19:14:53,460 - INFO - <Server sockets=(<asyncio.TransportSocket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:14:53,460 - INFO - Starting worker [11616]
+2024-05-16 19:14:56,831 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11616][0m
+2024-05-16 19:14:56,847 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11616][0m
+2024-05-16 19:14:56,847 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:14:57,687 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:14:57,703 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3452][0m
+2024-05-16 19:14:57,703 - INFO - <Server sockets=(<asyncio.TransportSocket fd=892, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:14:57,718 - INFO - Starting worker [3452]
+2024-05-16 19:18:45,935 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=892, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56963): <socket.socket fd=948, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56963)>
+2024-05-16 19:18:45,951 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:18:46,012 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:18:46,015 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:18:46,129 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:18:46,130 - INFO - coverage layer exists
+2024-05-16 19:18:46,132 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:18:46,133 - INFO - 
+2024-05-16 19:18:46,134 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001DDC7374E50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.187 seconds
+2024-05-16 19:19:24,071 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3452][0m
+2024-05-16 19:19:24,072 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3452][0m
+2024-05-16 19:19:24,073 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:19:25,344 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:19:25,361 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[9996][0m
+2024-05-16 19:19:25,361 - INFO - <Server sockets=(<asyncio.TransportSocket fd=876, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:19:25,379 - INFO - Starting worker [9996]
+2024-05-16 19:19:27,631 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=876, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 56980): <socket.socket fd=912, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 56980)>
+2024-05-16 19:19:27,695 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:19:27,832 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:19:27,834 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:19:27,961 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:19:27,961 - INFO - coverage layer exists
+2024-05-16 19:19:27,963 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:19:27,964 - INFO - 
+2024-05-16 19:19:27,966 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001519B204E50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.312 seconds
+2024-05-16 19:19:30,033 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:19:30,049 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:19:30,051 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:19:30,062 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:19:30,063 - INFO - coverage layer exists
+2024-05-16 19:19:30,064 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:19:30,066 - INFO - 
+2024-05-16 19:21:57,675 - DEBUG - KeepAlive Timeout. Closing connection.
+2024-05-16 19:26:17,806 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[9996][0m
+2024-05-16 19:26:17,807 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[9996][0m
+2024-05-16 19:26:17,808 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:26:18,788 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:26:18,802 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6100][0m
+2024-05-16 19:26:18,806 - INFO - <Server sockets=(<asyncio.TransportSocket fd=972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:26:18,814 - INFO - Starting worker [6100]
+2024-05-16 19:26:23,320 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=972, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 57065): <socket.socket fd=488, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 57065)>
+2024-05-16 19:26:23,336 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:26:23,406 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:26:23,409 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:26:23,523 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:26:23,523 - INFO - coverage layer exists
+2024-05-16 19:26:23,524 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:26:23,525 - INFO - 
+2024-05-16 19:26:23,527 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000002535D304E50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.203 seconds
+2024-05-16 19:26:29,272 - INFO - Hesderim - id: 41899, env: ppr
+2024-05-16 19:26:29,274 - ERROR - No Hesder found under the ID:41899
+2024-05-16 19:26:29,276 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:26:29,277 - INFO - 
+2024-05-16 19:26:46,258 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:26:46,267 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:26:46,269 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:26:46,401 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:26:46,402 - INFO - coverage layer exists
+2024-05-16 19:26:46,404 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:26:46,405 - INFO - 
+2024-05-16 19:26:46,408 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000002535D304490>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.156 seconds
+2024-05-16 19:27:36,435 - WARNING - Executing <TimerHandle when=1296184.1 _set_result_unless_cancelled(<Future finis...events.py:429>, None) at C:\Python\Python3912\lib\asyncio\futures.py:308 created at C:\Python\Python3912\lib\asyncio\tasks.py:648> took 0.141 seconds
+2024-05-16 19:27:44,352 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6100][0m
+2024-05-16 19:27:44,352 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[6100][0m
+2024-05-16 19:27:44,352 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:27:45,259 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:27:45,259 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11664][0m
+2024-05-16 19:27:45,275 - INFO - <Server sockets=(<asyncio.TransportSocket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:27:45,275 - INFO - Starting worker [11664]
+2024-05-16 19:27:50,250 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 57088): <socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 57088)>
+2024-05-16 19:27:50,264 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:27:50,328 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:27:50,330 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:27:50,443 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:27:50,444 - INFO - coverage layer exists
+2024-05-16 19:27:50,446 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:27:50,447 - INFO - 
+2024-05-16 19:27:50,448 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001D80A4E5E50>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.188 seconds
+2024-05-16 19:27:55,899 - INFO - Hesderim - id: 41891, env: ppr
+2024-05-16 19:27:55,902 - ERROR - No Hesder found under the ID:41891
+2024-05-16 19:27:55,903 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:27:55,904 - INFO - 
+2024-05-16 19:28:04,486 - INFO - Hesderim - id: 41892, env: ppr
+2024-05-16 19:28:04,488 - ERROR - No Hesder found under the ID:41892
+2024-05-16 19:28:04,489 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:28:04,490 - INFO - 
+2024-05-16 19:28:07,914 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:28:07,924 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:28:07,926 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:28:08,051 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:28:08,052 - INFO - coverage layer exists
+2024-05-16 19:28:08,053 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:28:08,054 - INFO - 
+2024-05-16 19:28:08,056 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001D80A4E5DC0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.156 seconds
+2024-05-16 19:28:12,676 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:28:12,677 - INFO - 
+2024-05-16 19:28:54,521 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11664][0m
+2024-05-16 19:28:54,537 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[11664][0m
+2024-05-16 19:28:54,537 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:28:56,170 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:28:56,184 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10348][0m
+2024-05-16 19:28:56,188 - INFO - <Server sockets=(<asyncio.TransportSocket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:28:56,196 - INFO - Starting worker [10348]
+2024-05-16 19:28:57,236 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 57112): <socket.socket fd=936, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 57112)>
+2024-05-16 19:28:57,251 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-16 19:28:57,317 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-16 19:28:57,319 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-16 19:28:57,429 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-16 19:28:57,430 - INFO - coverage layer exists
+2024-05-16 19:28:57,431 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:28:57,432 - INFO - 
+2024-05-16 19:28:57,434 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x000001C729C04DC0>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.187 seconds
+2024-05-16 19:29:01,203 - INFO - Hesderim - id: 41891, env: ppr
+2024-05-16 19:29:01,205 - ERROR - No Hesder found under the ID:41891
+2024-05-16 19:29:01,206 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:29:01,207 - INFO - 
+2024-05-16 19:30:03,657 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10348][0m
+2024-05-16 19:30:03,657 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10348][0m
+2024-05-16 19:30:03,657 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:30:04,805 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:30:04,819 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10668][0m
+2024-05-16 19:30:04,823 - INFO - <Server sockets=(<asyncio.TransportSocket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:30:04,830 - INFO - Starting worker [10668]
+2024-05-16 19:30:05,978 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=520, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 57131): <socket.socket fd=796, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 57131)>
+2024-05-16 19:30:06,031 - INFO - Hesderim - id: 41891, env: ppr
+2024-05-16 19:30:06,131 - ERROR - No Hesder found under the ID:41891
+2024-05-16 19:30:06,133 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-16 19:30:06,134 - INFO - 
+2024-05-16 19:30:06,137 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000138212F4820>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.156 seconds
+2024-05-16 19:30:45,353 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10668][0m
+2024-05-16 19:30:45,354 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10668][0m
+2024-05-16 19:30:45,355 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:30:46,244 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:30:46,260 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8876][0m
+2024-05-16 19:30:46,260 - INFO - <Server sockets=(<asyncio.TransportSocket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:30:46,275 - INFO - Starting worker [8876]
+2024-05-16 19:31:46,804 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8876][0m
+2024-05-16 19:31:46,804 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[8876][0m
+2024-05-16 19:31:46,804 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 19:31:47,742 - DEBUG - Using selector: SelectSelector
+2024-05-16 19:31:47,759 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12784][0m
+2024-05-16 19:31:47,759 - INFO - <Server sockets=(<asyncio.TransportSocket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-16 19:31:47,774 - INFO - Starting worker [12784]

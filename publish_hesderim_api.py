@@ -572,24 +572,33 @@ class Publish_Hsederim(object):
             if (id is None):
                 self.responseMessage.update_message(
                     new_message=f"No ID provided", new_response_code=400)
-
+                
                 return self.responseMessage.send_response_as_dict()
+            
             logging.info('Hesderim - id: {}, env: {}'.format(id, environment))
+
             try:
                 layerName, tilesPath, ws_name = self.getName(id, environment)
             except:
                 return self.responseMessage.send_response_as_dict()
+            
             layerPath = self.output_dir+"/{}.tif".format(layerName)
             output =    self.output_dir+"/{}".format(layerName)
             numTifs = len([name for name in os.listdir(
                 tilesPath) if name.endswith('.tif')])
+            
             if (os.path.exists(layerPath)):
                 logging.info("{} already exists".format(layerPath))
             else:
                 if numTifs > 0:
                     try:
                         logging.info("creating: {} ".format(layerPath))
-                        self.generateRaster(tilesPath, output)# output)
+                        ###
+                        ###
+                        # generating the raster (this can take several minuts)
+                        self.generateRaster(tilesPath, output) 
+                        ###
+                        ###
                     except:
                         return self.responseMessage.send_response_as_dict()
                 else:
@@ -599,10 +608,11 @@ class Publish_Hsederim(object):
                         "failed to create raster for env: {}, id: {}".format(environment, id))
 
                     self.responseMessage.update_message(new_message=f"No tif images in the input folder, '{tilesPath}' is empty", new_response_code=500)
+                    
                     return self.responseMessage.send_response_as_dict()
+                
             server_response = self.test_server()
             if server_response != 200:
-
                 self.responseMessage.update_message(
                     new_message=f"GeoServer Error, returned status code: {server_response}", new_response_code=500)
                 return self.responseMessage.send_response_as_dict()
@@ -615,17 +625,19 @@ class Publish_Hsederim(object):
                 cl_status, cl_msg = self.check_coveragelayer_exists(ws_name, layerName)
             except:
                 return self.responseMessage.send_response_as_dict()
+            
             if ws_status == 500 or cs_status == 500 or cl_status == 500:
                 response_code = 500
             if cl_status == 200:
                 response_code = 304
-                msg = "Layer exists, raster files recreated"
+                msg = "Layer exists"
             if environment == "prod":
                 response_url = 'http://gisprod01:8080/geoserver/ows'
             elif environment == "ppr":
                 response_url = 'http://gisppr01:8080/geoserver/ows'
             else:
                 response_url = 'http://gisdev01:8080/geoserver/ows'
+
             response_object[ws_name] = {'url': response_url,
                                         'layerName': '{}:{}'.format(ws_name, layerName),
                                         'layerPath': layerPath,
@@ -692,57 +704,55 @@ class Publish_Hsederim(object):
                 return self.responseMessage.send_response_as_dict()
             
             layerPath = self.output_dir+"/{}.tif".format(layerName)
-            #output =    self.output_dir+"/{}".format(layerName)
-            #numTifs = len([name for name in os.listdir(
-            #    tilesPath) if name.endswith('.tif')])
+
             if (os.path.exists(layerPath)):
                 logging.info("{} already exists".format(layerPath))
             else:
                 return self.responseMessage.send_response_as_dict()
                 
-            server_response = self.test_server()
-
-            if server_response != 200:
-                self.responseMessage.update_message(
-                    new_message=f"GeoServer Error, returned status code: {server_response}", new_response_code=500)
-                return self.responseMessage.send_response_as_dict()
-
-            response_object = {}
             try:
-                ws_status, ws_msg = self.check_workspace_exists(ws_name)
-                cs_status, cs_msg = self.check_coveragestore_exists(
-                    ws_name, layerName, layerPath)
                 cl_status, cl_msg = self.check_coveragelayer_exists(ws_name, layerName)
             except:
                 return self.responseMessage.send_response_as_dict()
             
-            if ws_status == 500 or cs_status == 500 or cl_status == 500:
+            if cl_status == 500:
                 response_code = 500
+                
             if cl_status == 200:
                 response_code = 304
                 msg = "Layer allready exists"
+
             if environment == "prod":
                 response_url = 'http://gisprod01:8080/geoserver/ows'
             elif environment == "ppr":
                 response_url = 'http://gisppr01:8080/geoserver/ows'
             else:
                 response_url = 'http://gisdev01:8080/geoserver/ows'
+
+            response_object = {}
             response_object[ws_name] = {'url': response_url,
                                         'layerName': '{}:{}'.format(ws_name, layerName),
                                         'layerPath': layerPath,
                                         'message': msg,
                                         'GeoServer': {
                                             'CoverageLayer': {'status': cl_status,
-                                                              'message': cl_msg},
+                                                              'message': cl_msg}
                                         }}
+            
+            self.responseMessage.update_message(
+                    new_message=response_object, new_response_code=response_code)
+            
         except Exception as e:
             logging.error(e, exc_info=True)
             response_code = 500
             response_object = {
                 'error': str(e)
             }
+            self.responseMessage.update_message(
+                    new_message=response_object, new_response_code=response_code)
 
-        return response_object, response_code   
+        #return response_object, response_code   
+        return self.responseMessage.send_response_as_dict()
 
 
     def create_nativ_json(self,output):

@@ -21,10 +21,11 @@ async def publish_hesder(rq):
         print ("@POST","env:", environment,"ID:",id)
         
         response_object = publish_hesderim_api.publish_hesder(id, environment)
-        #print (response_object)
+        #print ("@post",response_object)
         return response.json(response_object)
 
     except Exception as ex:
+        print ('error at publish_hesder')
         return response.text(ex.args[0])
 
 
@@ -36,10 +37,15 @@ async def check_publish_hesder(rq):
         print ("@GET", "env:", environment,"ID:",id)
         
         response_object = publish_hesderim_api.check_publish_hesder(id, environment)
-        #print (response_object)
+
+        if response_object['Response Code'] == 500:
+            print ("@500","No Hesder found under the ID:41891")
+            print ("@500","check the inprocess.DB")
+
         return response.json(response_object)
 
     except Exception as ex:
+        print ('error at check_publish_hesder')
         return response.text(ex.args[0])
 
 '''
@@ -85,4 +91,4 @@ def verifyNativ(rq):
 '''
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=8001, debug=True, auto_reload=True)
+    app.run(host='127.0.0.1', port=8001, auto_reload=True)
