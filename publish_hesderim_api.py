@@ -30,7 +30,6 @@ class ResponseMessage:
         return {"Message": self.message, "Response Code": self.response_code}
 
 
-
 class Publish_Hsederim(object):
 
     responseMessage = ResponseMessage()
@@ -129,18 +128,10 @@ class Publish_Hsederim(object):
 
     def create_workspace(self,ws_name):
         """
-        Create a GeoServer workspace using the REST API.
-        Workspaces are GeoServer's equivalent to ArcGIS Server folders.
-        GeoServer services will be available under a URL constructed of
-        {GeoServer Base URL}/{Service Type (WMS/WFS/WMTS/WCS)}/{Service Type}?LAYERS={Workspace}:{Layer Name}&{other parameters}
-        Example of a map request for one tile in a WMS - "http://gisdev01:8080/geoserver/hesderim/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng8&TRANSPARENT=true&tiled=true&STYLES&LAYERS=hesderim%3A20220327145827348_26_4&exceptions=application%2Fvnd.ogc.se_inimage&tilesOrigin=183084.25672588998%2C668252.308439702&WIDTH=256&HEIGHT=256&SRS=EPSG%3A6991&BBOX=183090.80328460783%2C668380.6888880059%2C183167.1547455272%2C668457.0403489253"
-
         See:
             https://docs.geoserver.org/latest/en/api/#1.0.0/workspaces.yaml
-
         Args:
             ws_name (str): workspace name
-
         Returns:
             (tuple): tuple containing:
                 status_code (int): Status code returned from GeoServer REST API
@@ -682,6 +673,82 @@ class Publish_Hsederim(object):
         return url
         
         
+    def check_publish_hesder(self,id, environment):
+        
+        self.getArguments()
+        response_code = 201
+        msg = "finished"
+        try:
+            if (id is None):
+                self.responseMessage.update_message(
+                    new_message=f"No ID provided", new_response_code=400)
+                return self.responseMessage.send_response_as_dict()
+            
+            logging.info('Hesderim - id: {}, env: {}'.format(id, environment))
+
+            try:
+                layerName, tilesPath, ws_name = self.getName(id, environment)
+            except:
+                return self.responseMessage.send_response_as_dict()
+            
+            layerPath = self.output_dir+"/{}.tif".format(layerName)
+            #output =    self.output_dir+"/{}".format(layerName)
+            #numTifs = len([name for name in os.listdir(
+            #    tilesPath) if name.endswith('.tif')])
+            if (os.path.exists(layerPath)):
+                logging.info("{} already exists".format(layerPath))
+            else:
+                return self.responseMessage.send_response_as_dict()
+                
+            server_response = self.test_server()
+
+            if server_response != 200:
+                self.responseMessage.update_message(
+                    new_message=f"GeoServer Error, returned status code: {server_response}", new_response_code=500)
+                return self.responseMessage.send_response_as_dict()
+
+            response_object = {}
+            try:
+                ws_status, ws_msg = self.check_workspace_exists(ws_name)
+                cs_status, cs_msg = self.check_coveragestore_exists(
+                    ws_name, layerName, layerPath)
+                cl_status, cl_msg = self.check_coveragelayer_exists(ws_name, layerName)
+            except:
+                return self.responseMessage.send_response_as_dict()
+            
+            if ws_status == 500 or cs_status == 500 or cl_status == 500:
+                response_code = 500
+            if cl_status == 200:
+                response_code = 304
+                msg = "Layer allready exists"
+            if environment == "prod":
+                response_url = 'http://gisprod01:8080/geoserver/ows'
+            elif environment == "ppr":
+                response_url = 'http://gisppr01:8080/geoserver/ows'
+            else:
+                response_url = 'http://gisdev01:8080/geoserver/ows'
+            response_object[ws_name] = {'url': response_url,
+                                        'layerName': '{}:{}'.format(ws_name, layerName),
+                                        'layerPath': layerPath,
+                                        'message': msg,
+                                        'GeoServer': {
+                                            'Workspace': {'status': ws_status,
+                                                          'message': ws_msg},
+                                            'CoverageStore': {'status': cs_status,
+                                                              'message': cs_msg},
+                                            'CoverageLayer': {'status': cl_status,
+                                                              'message': cl_msg},
+                                        }}
+        except Exception as e:
+            logging.error(e, exc_info=True)
+            response_code = 500
+            response_object = {
+                'error': str(e)
+            }
+
+        return response_object, response_code   
+
+
     def create_nativ_json(self,output):
         """
         Create metadata JSON for the generated raster

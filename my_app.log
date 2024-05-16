@@ -1,0 +1,234 @@
+2024-05-16 16:48:30,786 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                        Sanic v23.12.1                       \u2502
+  \u2502              Goin' Fast @ http://127.0.0.1:8000             \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502      app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502     mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502   server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502   python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502 platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 packages: sanic-routing==23.12.0    \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502                                     \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                     \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 16:48:32,022 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:48:32,030 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 16:48:32,032 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 16:48:32,942 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:48:33,022 - ERROR - Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\runners.py", line 256, in _serve_http_1
+    loop.run_until_complete(app._startup())
+  File "C:\Python\Python3912\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2395, in _startup
+    raise ServerError(message)
+sanic.exceptions.ServerError: Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+2024-05-16 16:48:33,022 - ERROR - Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+2024-05-16 16:48:33,022 - INFO - Killing Sanic-Server-0-0 [9424]
+2024-05-16 16:48:33,022 - INFO - Server Stopped
+2024-05-16 16:50:46,437 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8002               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 16:50:47,310 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:50:47,326 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 16:50:47,326 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 16:50:47,388 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-16 16:50:48,473 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:50:48,482 - ERROR - Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\runners.py", line 256, in _serve_http_1
+    loop.run_until_complete(app._startup())
+  File "C:\Python\Python3912\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2395, in _startup
+    raise ServerError(message)
+sanic.exceptions.ServerError: Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+2024-05-16 16:50:48,482 - ERROR - Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+2024-05-16 16:50:48,482 - INFO - Killing Sanic-Server-0-0 [4992]
+2024-05-16 16:50:48,482 - INFO - Killing Sanic-Reloader-0 [11104]
+2024-05-16 16:50:48,482 - INFO - Server Stopped
+2024-05-16 16:50:59,088 - WARNING - Worker shutdown timed out. Some processes may still be running.
+2024-05-16 16:50:59,142 - DEBUG - Bis später
+2024-05-16 16:51:31,702 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8002               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 16:51:32,552 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:51:32,552 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 16:51:32,552 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 16:51:32,584 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-16 16:51:33,645 - DEBUG - Using proactor: IocpProactor
+2024-05-16 16:51:33,660 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:51:33,660 - ERROR - Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\runners.py", line 256, in _serve_http_1
+    loop.run_until_complete(app._startup())
+  File "C:\Python\Python3912\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2395, in _startup
+    raise ServerError(message)
+sanic.exceptions.ServerError: Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+2024-05-16 16:51:33,676 - ERROR - Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+2024-05-16 16:51:33,676 - INFO - Killing Sanic-Server-0-0 [12992]
+2024-05-16 16:51:33,676 - INFO - Killing Sanic-Reloader-0 [11024]
+2024-05-16 16:51:33,676 - INFO - Server Stopped
+2024-05-16 16:51:44,257 - WARNING - Worker shutdown timed out. Some processes may still be running.
+2024-05-16 16:51:44,317 - DEBUG - Dag
+2024-05-16 16:52:00,350 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8002               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 16:52:01,221 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:52:01,221 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 16:52:01,236 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 16:52:01,252 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-16 16:52:02,300 - DEBUG - Using proactor: IocpProactor
+2024-05-16 16:52:02,331 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:52:02,331 - ERROR - Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\runners.py", line 256, in _serve_http_1
+    loop.run_until_complete(app._startup())
+  File "C:\Python\Python3912\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2395, in _startup
+    raise ServerError(message)
+sanic.exceptions.ServerError: Duplicate route names detected: __mp_main__.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+2024-05-16 16:52:02,347 - ERROR - Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+2024-05-16 16:52:02,347 - INFO - Killing Sanic-Server-0-0 [7004]
+2024-05-16 16:52:02,347 - INFO - Killing Sanic-Reloader-0 [12076]
+2024-05-16 16:52:02,347 - INFO - Server Stopped
+2024-05-16 16:52:12,911 - WARNING - Worker shutdown timed out. Some processes may still be running.
+2024-05-16 16:52:12,967 - DEBUG - Cheerio
+2024-05-16 16:53:59,915 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8002               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: testppr                   \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 16:54:00,862 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:54:00,862 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 16:54:00,862 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 16:54:00,898 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-16 16:54:01,785 - DEBUG - Using proactor: IocpProactor
+2024-05-16 16:54:01,785 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:54:01,801 - ERROR - Duplicate route names detected: testppr.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\runners.py", line 256, in _serve_http_1
+    loop.run_until_complete(app._startup())
+  File "C:\Python\Python3912\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2395, in _startup
+    raise ServerError(message)
+sanic.exceptions.ServerError: Duplicate route names detected: testppr.publish_hesder. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+2024-05-16 16:54:01,817 - ERROR - Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+2024-05-16 16:54:01,817 - INFO - Killing Sanic-Server-0-0 [9412]
+2024-05-16 16:54:01,817 - INFO - Killing Sanic-Reloader-0 [10836]
+2024-05-16 16:54:01,817 - INFO - Server Stopped
+2024-05-16 16:54:12,246 - WARNING - Worker shutdown timed out. Some processes may still be running.
+2024-05-16 16:54:12,300 - DEBUG - Cheerio
+2024-05-16 16:54:40,786 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8002               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: testppr                   \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-16 16:54:42,078 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:54:42,094 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-16 16:54:42,094 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-16 16:54:42,130 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-16 16:54:43,183 - DEBUG - Using proactor: IocpProactor
+2024-05-16 16:54:43,199 - DEBUG - Using selector: SelectSelector
+2024-05-16 16:54:43,199 - ERROR - Duplicate route names detected: testppr.publish_hesder21. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 117, in worker_serve
+    return _serve_http_1(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\runners.py", line 256, in _serve_http_1
+    loop.run_until_complete(app._startup())
+  File "C:\Python\Python3912\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2395, in _startup
+    raise ServerError(message)
+sanic.exceptions.ServerError: Duplicate route names detected: testppr.publish_hesder21. You should rename one or more of them explicitly by using the `name` param, or changing the implicit name derived from the class and function name. For more details, please see https://sanic.dev/en/guide/release-notes/v23.3.html#duplicated-route-names-are-no-longer-allowed
+2024-05-16 16:54:43,215 - ERROR - Not all workers acknowledged a successful startup. Shutting down.
+
+One of your worker processes terminated before startup was completed. Please solve any errors experienced during startup. If you do not see an exception traceback in your error logs, try running Sanic in in a single process using --single-process or single_process=True. Once you are confident that the server is able to start without errors you can switch back to multiprocess mode.
+2024-05-16 16:54:43,215 - INFO - Killing Sanic-Server-0-0 [8424]
+2024-05-16 16:54:43,215 - INFO - Killing Sanic-Reloader-0 [4616]
+2024-05-16 16:54:43,215 - INFO - Server Stopped
+2024-05-16 16:54:53,883 - WARNING - Worker shutdown timed out. Some processes may still be running.
+2024-05-16 16:54:53,942 - DEBUG - Do svidaniya
