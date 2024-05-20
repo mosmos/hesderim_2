@@ -2656,3 +2656,169 @@ See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
 2024-05-20 16:11:04,053 - INFO - coverage layer exists
 2024-05-20 16:11:58,967 - DEBUG - Using selector: SelectSelector
 2024-05-20 16:11:59,044 - INFO - Starting worker [1652]
+2024-05-20 17:16:44,192 - DEBUG - Using proactor: IocpProactor
+2024-05-20 17:16:44,195 - DEBUG - executing <function connect.<locals>.connector at 0x000002810385AB80>
+2024-05-20 17:16:44,195 - DEBUG - operation <function connect.<locals>.connector at 0x000002810385AB80> completed
+2024-05-20 17:16:44,196 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002810385E120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, job_status TEXT)', [])
+2024-05-20 17:16:44,196 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002810385E120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, job_status TEXT)', []) completed
+2024-05-20 17:16:44,197 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002810385E120>)
+2024-05-20 17:16:44,197 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002810385E120>) completed
+2024-05-20 17:16:44,197 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002810385E120>)
+2024-05-20 17:16:44,197 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002810385E120>) completed
+2024-05-20 17:16:44,289 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: production, single worker \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 17:16:44,289 - WARNING - [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-05-20 17:16:45,185 - DEBUG - Using selector: SelectSelector
+2024-05-20 17:16:46,766 - DEBUG - Using selector: SelectSelector
+2024-05-20 17:16:46,800 - DEBUG - Using proactor: IocpProactor
+2024-05-20 17:16:46,848 - INFO - Starting worker [7212]
+2024-05-20 17:16:56,866 - INFO - Hesderim - id: 4560, env: ppr
+2024-05-20 17:16:56,947 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240520124946504_D246.tif already exists
+2024-05-20 17:16:56,949 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 17:16:57,078 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240520124946504_D246/coverages.json HTTP/1.1" 200 None
+2024-05-20 17:16:57,078 - INFO - coverage layer exists
+2024-05-20 17:16:57,079 - DEBUG - executing <function connect.<locals>.connector at 0x000001948395C700>
+2024-05-20 17:16:57,080 - DEBUG - operation <function connect.<locals>.connector at 0x000001948395C700> completed
+2024-05-20 17:16:57,080 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000019480C32E40>, 'DELETE FROM processes WHERE id = ?', '4560')
+2024-05-20 17:16:57,081 - DEBUG - returning exception Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+2024-05-20 17:16:57,081 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000019480C32E40>)
+2024-05-20 17:16:57,082 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000019480C32E40>) completed
+2024-05-20 17:16:57,082 - ERROR - Exception occurred while handling uri: 'http://127.0.0.1:8001/hesderim_2_1?env=ppr&id=4560'
+Traceback (most recent call last):
+  File "d:\Teum4U\Hesderim_2_1\main.py", line 62, in publish_hesder
+    await db.execute("DELETE FROM processes WHERE id = ?", (id))
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 193, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 132, in _execute
+    return await future
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 115, in run
+    result = function()
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "d:\Teum4U\Hesderim_2_1\main.py", line 84, in publish_hesder
+    return response.json({"id": id, "message": ex}, status=500)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\response\convenience.py", line 57, in json
+    return JSONResponse(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\response\types.py", line 315, in __init__
+    self._encode_body(self._use_dumps(body, **self._use_dumps_kwargs)),
+  File "C:\Python\Python3912\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Python\Python3912\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python\Python3912\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python\Python3912\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ProgrammingError is not JSON serializable
+2024-05-20 17:18:04,825 - DEBUG - Using selector: SelectSelector
+2024-05-20 17:18:04,909 - INFO - Starting worker [12928]
+2024-05-20 17:18:28,702 - INFO - Hesderim - id: 4560, env: ppr
+2024-05-20 17:18:28,783 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240520124946504_D246.tif already exists
+2024-05-20 17:18:28,785 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 17:18:28,897 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240520124946504_D246/coverages.json HTTP/1.1" 200 None
+2024-05-20 17:18:28,898 - INFO - coverage layer exists
+2024-05-20 17:18:28,899 - DEBUG - executing <function connect.<locals>.connector at 0x000001518395A700>
+2024-05-20 17:18:28,900 - DEBUG - operation <function connect.<locals>.connector at 0x000001518395A700> completed
+2024-05-20 17:18:28,900 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000015180C52E40>, 'DELETE FROM processes WHERE id = ?', '4560')
+2024-05-20 17:18:28,901 - DEBUG - returning exception Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+2024-05-20 17:18:28,901 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000015180C52E40>)
+2024-05-20 17:18:28,901 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000015180C52E40>) completed
+2024-05-20 17:18:28,902 - ERROR - Exception occurred while handling uri: 'http://127.0.0.1:8001/hesderim_2_1?env=ppr&id=4560'
+Traceback (most recent call last):
+  File "d:\Teum4U\Hesderim_2_1\main.py", line 62, in publish_hesder
+    await db.execute("DELETE FROM processes WHERE id = ?", (id))
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 193, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 132, in _execute
+    return await future
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 115, in run
+    result = function()
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "d:\Teum4U\Hesderim_2_1\main.py", line 84, in publish_hesder
+    return response.json({"id": id, "message": ex}, status=500)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\response\convenience.py", line 57, in json
+    return JSONResponse(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\response\types.py", line 315, in __init__
+    self._encode_body(self._use_dumps(body, **self._use_dumps_kwargs)),
+  File "C:\Python\Python3912\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Python\Python3912\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python\Python3912\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python\Python3912\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ProgrammingError is not JSON serializable
+2024-05-20 17:19:40,770 - DEBUG - Using selector: SelectSelector
+2024-05-20 17:19:40,816 - INFO - Starting worker [9320]
+2024-05-20 17:19:45,661 - DEBUG - Using selector: SelectSelector
+2024-05-20 17:19:45,739 - INFO - Starting worker [18416]
+2024-05-20 17:19:46,606 - INFO - Hesderim - id: 4560, env: ppr
+2024-05-20 17:19:46,903 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240520124946504_D246.tif already exists
+2024-05-20 17:19:46,906 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 17:19:47,026 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240520124946504_D246/coverages.json HTTP/1.1" 200 None
+2024-05-20 17:19:47,027 - INFO - coverage layer exists
+2024-05-20 17:19:47,028 - DEBUG - executing <function connect.<locals>.connector at 0x000001DE03520F70>
+2024-05-20 17:19:47,029 - DEBUG - operation <function connect.<locals>.connector at 0x000001DE03520F70> completed
+2024-05-20 17:19:47,030 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001DE00C62E40>, 'DELETE FROM processes WHERE id = ?', '4560')
+2024-05-20 17:19:47,031 - DEBUG - returning exception Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+2024-05-20 17:19:47,031 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001DE00C62E40>)
+2024-05-20 17:19:47,031 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001DE00C62E40>) completed
+2024-05-20 17:19:47,032 - ERROR - Exception occurred while handling uri: 'http://127.0.0.1:8001/hesderim_2_1?env=ppr&id=4560'
+Traceback (most recent call last):
+  File "d:\Teum4U\Hesderim_2_1\main.py", line 62, in publish_hesder
+    async with db.execute("DELETE FROM processes WHERE id = ?", (id)):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\context.py", line 39, in __aenter__
+    self._obj = await self._coro
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 193, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 132, in _execute
+    return await future
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\aiosqlite\core.py", line 115, in run
+    result = function()
+sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "handle_request", line 102, in handle_request
+    try:
+  File "d:\Teum4U\Hesderim_2_1\main.py", line 84, in publish_hesder
+    return response.json({"id": id, "message": ex}, status=500)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\response\convenience.py", line 57, in json
+    return JSONResponse(
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\response\types.py", line 315, in __init__
+    self._encode_body(self._use_dumps(body, **self._use_dumps_kwargs)),
+  File "C:\Python\Python3912\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Python\Python3912\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python\Python3912\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python\Python3912\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ProgrammingError is not JSON serializable

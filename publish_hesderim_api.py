@@ -4,12 +4,10 @@ import os
 import subprocess
 import json
 from requests import request,auth
-import sys
 import argparse
 import secrets
 import base64
 from datetime import datetime as dt, timedelta
-#from osgeo import gdal
 import glob
 
 #gdal.SetCacheMax(512) # TODO try bigger RAM 
@@ -632,7 +630,7 @@ class Publish_Hsederim(object):
                 response_code = 500
             if cl_status == 200:
                 response_code = 304
-                msg = "Layer exists"
+                msg = "Layer allready exists"
             if environment == "prod":
                 response_url = 'http://gisprod01:8080/geoserver/ows'
             elif environment == "ppr":
