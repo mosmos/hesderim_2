@@ -6,7 +6,7 @@ import asyncio
 
 import publish_hesderim_api
 
-app = Sanic("asinctest")
+app = Sanic(__name__)
 CORS(app, resources=r'/*', origins="*",
      methods=["GET", "POST","DELETE", "HEAD", "OPTIONS"])
 app.config.PROXIES_COUNT = 1  # Set the number of trusted proxy servers
