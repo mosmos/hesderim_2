@@ -9,7 +9,7 @@ import argparse
 import secrets
 import base64
 from datetime import datetime as dt, timedelta
-from osgeo import gdal
+#from osgeo import gdal
 import glob
 
 #gdal.SetCacheMax(512) # TODO try bigger RAM 

@@ -1424,3 +1424,273 @@ NameError: name 'ws_status' is not defined
 2024-05-16 19:31:47,759 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[12784][0m
 2024-05-16 19:31:47,759 - INFO - <Server sockets=(<asyncio.TransportSocket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
 2024-05-16 19:31:47,774 - INFO - Starting worker [12784]
+2024-05-20 12:32:33,859 - DEBUG - Using proactor: IocpProactor
+2024-05-20 12:32:33,875 - DEBUG - executing <function connect.<locals>.connector at 0x000001EE5A50AF70>
+2024-05-20 12:32:33,875 - DEBUG - operation <function connect.<locals>.connector at 0x000001EE5A50AF70> completed
+2024-05-20 12:32:33,875 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001EE5A549030>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 12:32:33,890 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001EE5A549030>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 12:32:33,890 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001EE5A549030>)
+2024-05-20 12:32:33,890 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001EE5A549030>) completed
+2024-05-20 12:32:33,890 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001EE5A549030>)
+2024-05-20 12:32:33,890 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001EE5A549030>) completed
+2024-05-20 12:32:34,006 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: testppr21                 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: production, single worker \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 12:32:34,008 - WARNING - [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-05-20 12:32:34,867 - DEBUG - Using selector: SelectSelector
+2024-05-20 12:32:35,868 - DEBUG - Using proactor: IocpProactor
+2024-05-20 12:32:35,884 - DEBUG - Using selector: SelectSelector
+2024-05-20 12:32:35,952 - INFO - Starting worker [11104]
+2024-05-20 12:36:47,492 - DEBUG - Using selector: SelectSelector
+2024-05-20 12:36:47,545 - INFO - Starting worker [12868]
+2024-05-20 12:38:21,914 - DEBUG - Using selector: SelectSelector
+2024-05-20 12:38:21,965 - INFO - Starting worker [4288]
+2024-05-20 12:39:19,188 - DEBUG - Using selector: SelectSelector
+2024-05-20 12:39:19,240 - INFO - Starting worker [14096]
+2024-05-20 14:20:27,781 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:20:27,781 - DEBUG - executing <function connect.<locals>.connector at 0x0000021892489160>
+2024-05-20 14:20:27,781 - DEBUG - operation <function connect.<locals>.connector at 0x0000021892489160> completed
+2024-05-20 14:20:27,797 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000021892497030>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:20:27,797 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000021892497030>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:20:27,797 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000021892497030>)
+2024-05-20 14:20:27,797 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000021892497030>) completed
+2024-05-20 14:20:27,797 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000021892497030>)
+2024-05-20 14:20:27,797 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000021892497030>) completed
+2024-05-20 14:20:27,923 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: testppr21                 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: production, single worker \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:20:27,923 - WARNING - [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-05-20 14:20:28,843 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:20:29,824 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:20:29,826 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:20:29,897 - INFO - Starting worker [11328]
+2024-05-20 14:20:32,422 - DEBUG - executing <function connect.<locals>.connector at 0x000001D28E29F670>
+2024-05-20 14:20:32,423 - DEBUG - operation <function connect.<locals>.connector at 0x000001D28E29F670> completed
+2024-05-20 14:20:32,423 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, 'SELECT status FROM processes WHERE id = ?', (None,))
+2024-05-20 14:20:32,424 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, 'SELECT status FROM processes WHERE id = ?', (None,)) completed
+2024-05-20 14:20:32,424 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x000001D28E2CD730>)
+2024-05-20 14:20:32,424 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x000001D28E2CD730>) completed
+2024-05-20 14:20:32,424 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D28E2CD730>)
+2024-05-20 14:20:32,424 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D28E2CD730>) completed
+2024-05-20 14:20:32,425 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,))
+2024-05-20 14:20:32,427 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,)) completed
+2024-05-20 14:20:32,427 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:20:32,434 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:20:32,434 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:20:32,435 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:20:32,458 - DEBUG - executing <function connect.<locals>.connector at 0x000001D28E29F670>
+2024-05-20 14:20:32,458 - DEBUG - operation <function connect.<locals>.connector at 0x000001D28E29F670> completed
+2024-05-20 14:20:32,459 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,))
+2024-05-20 14:20:32,459 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,)) completed
+2024-05-20 14:20:32,460 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:20:32,460 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:20:32,460 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:20:32,460 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:21:00,291 - DEBUG - executing <function connect.<locals>.connector at 0x000001D28E2EC280>
+2024-05-20 14:21:00,291 - DEBUG - operation <function connect.<locals>.connector at 0x000001D28E2EC280> completed
+2024-05-20 14:21:00,291 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, 'SELECT status FROM processes WHERE id = ?', (None,))
+2024-05-20 14:21:00,292 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, 'SELECT status FROM processes WHERE id = ?', (None,)) completed
+2024-05-20 14:21:00,292 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x000001D28E2CD880>)
+2024-05-20 14:21:00,292 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x000001D28E2CD880>) completed
+2024-05-20 14:21:00,293 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D28E2CD880>)
+2024-05-20 14:21:00,293 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001D28E2CD880>) completed
+2024-05-20 14:21:00,293 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,))
+2024-05-20 14:21:00,295 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,)) completed
+2024-05-20 14:21:00,295 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:21:00,303 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:21:00,304 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:21:00,304 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:21:00,307 - DEBUG - executing <function connect.<locals>.connector at 0x000001D28E29F820>
+2024-05-20 14:21:00,308 - DEBUG - operation <function connect.<locals>.connector at 0x000001D28E29F820> completed
+2024-05-20 14:21:00,308 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,))
+2024-05-20 14:21:00,308 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001D28B598D50>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,)) completed
+2024-05-20 14:21:00,309 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:21:00,309 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:21:00,309 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>)
+2024-05-20 14:21:00,310 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001D28B598D50>) completed
+2024-05-20 14:23:09,213 - ERROR - Sanic app name 'testppr21' not found.
+App instantiation must occur outside if __name__ == '__main__' block or by using an AppLoader.
+See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2231, in get_app
+    return cls._app_registry[name]
+KeyError: 'testppr21'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 55, in worker_serve
+    app = app_loader.load()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\loader.py", line 75, in load
+    return self.factory()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2237, in get_app
+    raise SanicException(
+sanic.exceptions.SanicException: Sanic app name 'testppr21' not found.
+App instantiation must occur outside if __name__ == '__main__' block or by using an AppLoader.
+See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
+2024-05-20 14:23:09,226 - ERROR - Failed to restart processes: __TERMINATE_EARLY__
+2024-05-20 14:24:02,499 - ERROR - Sanic app name 'testppr21' not found.
+App instantiation must occur outside if __name__ == '__main__' block or by using an AppLoader.
+See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2231, in get_app
+    return cls._app_registry[name]
+KeyError: 'testppr21'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 55, in worker_serve
+    app = app_loader.load()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\loader.py", line 75, in load
+    return self.factory()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2237, in get_app
+    raise SanicException(
+sanic.exceptions.SanicException: Sanic app name 'testppr21' not found.
+App instantiation must occur outside if __name__ == '__main__' block or by using an AppLoader.
+See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
+2024-05-20 14:24:02,508 - ERROR - Failed to restart processes: __TERMINATE_EARLY__
+2024-05-20 14:24:16,085 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:24:16,085 - DEBUG - executing <function connect.<locals>.connector at 0x0000026551FCA160>
+2024-05-20 14:24:16,085 - DEBUG - operation <function connect.<locals>.connector at 0x0000026551FCA160> completed
+2024-05-20 14:24:16,085 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000026551FD7030>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:24:16,085 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000026551FD7030>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:24:16,085 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000026551FD7030>)
+2024-05-20 14:24:16,085 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000026551FD7030>) completed
+2024-05-20 14:24:16,085 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000026551FD7030>)
+2024-05-20 14:24:16,085 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000026551FD7030>) completed
+2024-05-20 14:24:16,195 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:24:17,084 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:24:17,084 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-20 14:24:17,084 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:24:17,115 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-20 14:24:18,311 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:24:18,374 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3876][0m
+2024-05-20 14:24:18,380 - INFO - <Server sockets=(<asyncio.TransportSocket fd=272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-20 14:24:18,389 - INFO - Starting worker [3876]
+2024-05-20 14:24:18,491 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:24:25,796 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=272, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 52486): <socket.socket fd=320, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 52486)>
+2024-05-20 14:24:25,838 - DEBUG - executing <function connect.<locals>.connector at 0x0000020658371550>
+2024-05-20 14:24:25,839 - DEBUG - operation <function connect.<locals>.connector at 0x0000020658371550> completed
+2024-05-20 14:24:25,842 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000206582385D0>, 'SELECT status FROM processes WHERE id = ?', (None,))
+2024-05-20 14:24:25,842 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000206582385D0>, 'SELECT status FROM processes WHERE id = ?', (None,)) completed
+2024-05-20 14:24:25,845 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000206583840A0>)
+2024-05-20 14:24:25,845 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000206583840A0>) completed
+2024-05-20 14:24:25,848 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000206583840A0>)
+2024-05-20 14:24:25,848 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000206583840A0>) completed
+2024-05-20 14:24:25,850 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000206582385D0>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,))
+2024-05-20 14:24:25,852 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000206582385D0>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,)) completed
+2024-05-20 14:24:25,855 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000206582385D0>)
+2024-05-20 14:24:25,862 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000206582385D0>) completed
+2024-05-20 14:24:25,865 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000206582385D0>)
+2024-05-20 14:24:25,866 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000206582385D0>) completed
+2024-05-20 14:24:25,870 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:24:25,871 - INFO - 
+2024-05-20 14:24:25,915 - DEBUG - executing <function connect.<locals>.connector at 0x00000206583CB790>
+2024-05-20 14:24:25,916 - DEBUG - operation <function connect.<locals>.connector at 0x00000206583CB790> completed
+2024-05-20 14:24:25,919 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000206582385D0>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,))
+2024-05-20 14:24:25,920 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000206582385D0>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,)) completed
+2024-05-20 14:24:25,927 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000206582385D0>)
+2024-05-20 14:24:25,927 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000206582385D0>) completed
+2024-05-20 14:24:25,931 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000206582385D0>)
+2024-05-20 14:24:25,931 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000206582385D0>) completed
+2024-05-20 14:25:16,779 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3876][0m
+2024-05-20 14:25:16,779 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[3876][0m
+2024-05-20 14:25:16,779 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:25:49,323 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:25:49,326 - DEBUG - executing <function connect.<locals>.connector at 0x000001FE03859F70>
+2024-05-20 14:25:49,327 - DEBUG - operation <function connect.<locals>.connector at 0x000001FE03859F70> completed
+2024-05-20 14:25:49,327 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001FE0385D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:25:49,328 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001FE0385D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:25:49,328 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001FE0385D120>)
+2024-05-20 14:25:49,329 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001FE0385D120>) completed
+2024-05-20 14:25:49,329 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001FE0385D120>)
+2024-05-20 14:25:49,329 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001FE0385D120>) completed
+2024-05-20 14:25:49,493 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:25:50,732 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:25:50,758 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-20 14:25:50,770 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:25:50,859 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-20 14:25:52,126 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:25:52,188 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:25:52,211 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[10776][0m
+2024-05-20 14:25:52,244 - INFO - <Server sockets=(<asyncio.TransportSocket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-20 14:25:52,255 - INFO - Starting worker [10776]
+2024-05-20 14:25:52,397 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=308, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 52518): <socket.socket fd=556, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 52518)>
+2024-05-20 14:25:52,518 - WARNING - Executing <Task pending name='Task-7' coro=<HttpProtocol.connection_task() running at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:155> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x00000205DB43AC70>()] created at C:\Python\Python3912\lib\asyncio\base_events.py:429> created at D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\server\protocols\http_protocol.py:283> took 0.110 seconds
+2024-05-20 14:25:52,522 - DEBUG - executing <function connect.<locals>.connector at 0x00000205DB4044C0>
+2024-05-20 14:25:52,523 - DEBUG - operation <function connect.<locals>.connector at 0x00000205DB4044C0> completed
+2024-05-20 14:25:52,527 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000205DB2963F0>, 'SELECT status FROM processes WHERE id = ?', (None,))
+2024-05-20 14:25:52,528 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000205DB2963F0>, 'SELECT status FROM processes WHERE id = ?', (None,)) completed
+2024-05-20 14:25:52,532 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000205DB4150A0>)
+2024-05-20 14:25:52,532 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000205DB4150A0>) completed
+2024-05-20 14:25:52,536 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000205DB4150A0>)
+2024-05-20 14:25:52,537 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000205DB4150A0>) completed
+2024-05-20 14:25:52,540 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000205DB2963F0>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,))
+2024-05-20 14:25:52,543 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000205DB2963F0>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", (None,)) completed
+2024-05-20 14:25:52,546 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000205DB2963F0>)
+2024-05-20 14:25:52,560 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000205DB2963F0>) completed
+2024-05-20 14:25:52,564 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000205DB2963F0>)
+2024-05-20 14:25:52,564 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000205DB2963F0>) completed
+2024-05-20 14:25:52,578 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:25:52,580 - INFO - 
+2024-05-20 14:25:52,625 - DEBUG - executing <function connect.<locals>.connector at 0x00000205DB38E040>
+2024-05-20 14:25:52,626 - DEBUG - operation <function connect.<locals>.connector at 0x00000205DB38E040> completed
+2024-05-20 14:25:52,630 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000205DB2963F0>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,))
+2024-05-20 14:25:52,632 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000205DB2963F0>, "UPDATE processes SET status = 'done' WHERE id = ?", (None,)) completed
+2024-05-20 14:25:52,638 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000205DB2963F0>)
+2024-05-20 14:25:52,638 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000205DB2963F0>) completed
+2024-05-20 14:25:52,642 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000205DB2963F0>)
+2024-05-20 14:25:52,642 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000205DB2963F0>) completed
