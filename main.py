@@ -51,17 +51,14 @@ async def publish_hesder(sanic_req):
         if not id:
             return response.json({"error": "id is required"}, status=400)
     
-        print ("@POST2_1","env:", environment,"ID:",id)
+        print ("@POST 2","env:", environment,"ID:",id)
 
         # check if the layer allready exists
         check_object = publish_hesderim_api.check_publish_hesder(id, environment)
-        if check_object['Message']['Response Code']== 304:
-            print (304)
+        if check_object['Response Code']==304:
+            return  response.json(check_object)
         
-        print ("1@@@@@@@@@@@@@@@@check_object@@@@@@@@@@@@@@@@")
-        print (check_object)
-        #return response.json({"id": id, "status": "exists"}, status=200)
-
+        # if the layer is not exists than we have to create it and register the status to sqlite.DB
         async with aiosqlite.connect(DB_PATH) as db:
             async with db.execute("SELECT status FROM processes WHERE id = ?", (id,)) as cursor:
                 row = await cursor.fetchone()
@@ -72,16 +69,14 @@ async def publish_hesder(sanic_req):
             await db.execute("INSERT INTO processes (id, status) VALUES (?, 'in process')", (id,))
             await db.commit()
         
-        #response_object = publish_hesderim_api.publish_hesder(id, environment)
-        response_object = await asyncio.create_task(long_running_process(id, environment))
-        print ("2@@@@@@@@@@@@@@@@response_object@@@@@@@@@@@@@@@@")
-        print (response_object)
-        #print ("@post",response_object)
-        return response.json(response_object)
+        # creating the task that will create the raster and publish the layer
+        asyncio.create_task(long_running_process(id, environment))
+
+        return response.json({"message": "Process started", "id": id}, status=202)
 
     except Exception as ex:
-        print ('error at publish_hesder')
-        return response.text(ex.args[0])
+        print ('error at publish_hesder',ex)
+        return response.json({"message": ex, "id": id}, status=500)
 
 
 
