@@ -406,6 +406,7 @@ class Publish_Hsederim(object):
         url = self.gs_base_url+"/layers.json"
         response = request("GET", url, auth=auth.HTTPBasicAuth(
             self.geoserver_user, self.geoserver_pass))
+        
         return response.status_code
         
         
@@ -475,6 +476,7 @@ class Publish_Hsederim(object):
         except pyodbc.DatabaseError as e:
             self.responseMessage.update_message(new_message=f"Database error:{e.args[0]}", new_response_code=500)
             logging.error(e, exc_info=True)
+
         return hesder_name, input_path, ws_name
         
         
@@ -650,6 +652,10 @@ class Publish_Hsederim(object):
                                             'CoverageLayer': {'status': cl_status,
                                                               'message': cl_msg},
                                         }}
+            
+            self.responseMessage.update_message(
+                    new_message=response_object, new_response_code=response_code)
+            
         except Exception as e:
             logging.error(e, exc_info=True)
             response_code = 500
@@ -657,7 +663,10 @@ class Publish_Hsederim(object):
                 'error': str(e)
             }
 
-        return response_object, response_code
+            self.responseMessage.update_message(
+                    new_message=response_object, new_response_code=response_code)
+
+        return self.responseMessage.send_response_as_dict()
 
 
     def getTileJsonAddress(self,environment, tilesDir):

@@ -6,7 +6,7 @@ import asyncio
 
 import publish_hesderim_api
 
-app = Sanic(__name__)
+app = Sanic("asinctest")
 CORS(app, resources=r'/*', origins="*",
      methods=["GET", "POST","DELETE", "HEAD", "OPTIONS"])
 app.config.PROXIES_COUNT = 1  # Set the number of trusted proxy servers
@@ -47,11 +47,18 @@ async def publish_hesder(sanic_req):
 
         id = sanic_req.args.get('id')
         environment = sanic_req.args.get('env')
-        print ("@POST","env:", environment,"ID:",id)
+
+        if not id:
+            return response.json({"error": "id is required"}, status=400)
+    
+        print ("@POST2_1","env:", environment,"ID:",id)
 
         # check if the layer allready exists
         check_object = publish_hesderim_api.check_publish_hesder(id, environment)
+        if check_object['Message']['Response Code']== 304:
+            print (304)
         
+        print ("1@@@@@@@@@@@@@@@@check_object@@@@@@@@@@@@@@@@")
         print (check_object)
         #return response.json({"id": id, "status": "exists"}, status=200)
 
@@ -66,7 +73,9 @@ async def publish_hesder(sanic_req):
             await db.commit()
         
         #response_object = publish_hesderim_api.publish_hesder(id, environment)
-        response_object = asyncio.create_task(long_running_process(id, environment))
+        response_object = await asyncio.create_task(long_running_process(id, environment))
+        print ("2@@@@@@@@@@@@@@@@response_object@@@@@@@@@@@@@@@@")
+        print (response_object)
         #print ("@post",response_object)
         return response.json(response_object)
 
@@ -104,4 +113,4 @@ async def check_publish_hesder(sanic_req):
 
 if __name__ == '__main__':
     asyncio.run(setup_db())
-    app.run(host='127.0.0.1', port=8001, debug=True,auto_reload=True)
+    app.run(host='127.0.0.1', port=8001, auto_reload=True)

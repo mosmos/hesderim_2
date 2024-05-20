@@ -1694,3 +1694,428 @@ See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
 2024-05-20 14:25:52,638 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000205DB2963F0>) completed
 2024-05-20 14:25:52,642 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000205DB2963F0>)
 2024-05-20 14:25:52,642 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000205DB2963F0>) completed
+2024-05-20 14:27:10,170 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:27:10,186 - DEBUG - executing <function connect.<locals>.connector at 0x0000013483859F70>
+2024-05-20 14:27:10,186 - DEBUG - operation <function connect.<locals>.connector at 0x0000013483859F70> completed
+2024-05-20 14:27:10,186 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001348385D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:27:10,186 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001348385D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:27:10,186 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001348385D120>)
+2024-05-20 14:27:10,186 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001348385D120>) completed
+2024-05-20 14:27:10,186 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001348385D120>)
+2024-05-20 14:27:10,186 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001348385D120>) completed
+2024-05-20 14:27:10,382 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: debug, single worker      \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:27:11,307 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:27:11,307 - DEBUG - Creating multiprocessing context using 'spawn'
+2024-05-20 14:27:11,307 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:27:11,338 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Reloader-0[0m
+2024-05-20 14:27:12,587 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:27:12,729 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:27:12,760 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[16312][0m
+2024-05-20 14:27:12,822 - INFO - <Server sockets=(<asyncio.TransportSocket fd=780, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-20 14:27:12,845 - INFO - Starting worker [16312]
+2024-05-20 14:27:23,988 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[16312][0m
+2024-05-20 14:27:23,988 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[16312][0m
+2024-05-20 14:27:23,988 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:27:24,869 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:27:24,900 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[15860][0m
+2024-05-20 14:27:24,900 - INFO - <Server sockets=(<asyncio.TransportSocket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-20 14:27:24,916 - INFO - Starting worker [15860]
+2024-05-20 14:27:38,109 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=436, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 52573): <socket.socket fd=500, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 52573)>
+2024-05-20 14:27:38,123 - DEBUG - The client accepts */*, using 'text' from any
+2024-05-20 14:27:38,124 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1/&env=ppr' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:27:38,126 - DEBUG - Sanic-CORS: CORS was handled in the exception handler, skipping
+2024-05-20 14:27:38,126 - INFO - 
+2024-05-20 14:27:55,813 - DEBUG - The client accepts */*, using 'text' from any
+2024-05-20 14:27:55,813 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1/&env=ppr' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:27:55,814 - DEBUG - Sanic-CORS: CORS was handled in the exception handler, skipping
+2024-05-20 14:27:55,815 - INFO - 
+2024-05-20 14:28:06,541 - DEBUG - The client accepts */*, using 'text' from any
+2024-05-20 14:28:06,541 - DEBUG - Sanic-CORS: Request to '/hesderim_2_1/&env=ppr' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:28:06,542 - DEBUG - Sanic-CORS: CORS was handled in the exception handler, skipping
+2024-05-20 14:28:06,543 - INFO - 
+2024-05-20 14:28:44,094 - DEBUG - The client accepts */*, using 'text' from any
+2024-05-20 14:28:44,095 - DEBUG - Sanic-CORS: Request to '/hesderim_21/&env=ppr' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:28:44,096 - DEBUG - Sanic-CORS: CORS was handled in the exception handler, skipping
+2024-05-20 14:28:44,097 - INFO - 
+2024-05-20 14:29:37,784 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[15860][0m
+2024-05-20 14:29:37,784 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[15860][0m
+2024-05-20 14:29:37,784 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:29:38,581 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:29:38,597 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[15912][0m
+2024-05-20 14:29:38,597 - INFO - <Server sockets=(<asyncio.TransportSocket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-20 14:29:38,619 - INFO - Starting worker [15912]
+2024-05-20 14:29:41,334 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=596, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 52594): <socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 52594)>
+2024-05-20 14:29:41,349 - DEBUG - The client accepts */*, using 'text' from any
+2024-05-20 14:29:41,350 - DEBUG - Sanic-CORS: Request to '/hesderim_21/&env=ppr' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:29:41,351 - DEBUG - Sanic-CORS: CORS was handled in the exception handler, skipping
+2024-05-20 14:29:41,352 - INFO - 
+2024-05-20 14:29:55,478 - DEBUG - [34mRestarting a process: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[15912][0m
+2024-05-20 14:29:55,478 - DEBUG - [34mBegin restart termination: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[15912][0m
+2024-05-20 14:29:55,478 - DEBUG - [34mStarting a process: [1m[38;2;255;13;104mSanic-Server-0-0[0m
+2024-05-20 14:29:56,285 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:29:56,300 - DEBUG - [34mProcess ack: [1m[38;2;255;13;104mSanic-Server-0-0 [34m[16064][0m
+2024-05-20 14:29:56,300 - INFO - <Server sockets=(<asyncio.TransportSocket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> is serving
+2024-05-20 14:29:56,300 - INFO - Starting worker [16064]
+2024-05-20 14:29:59,713 - DEBUG - <Server sockets=(<asyncio.TransportSocket fd=572, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 8001)>,)> got a new connection from ('127.0.0.1', 52600): <socket.socket fd=400, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 52600)>
+2024-05-20 14:29:59,727 - DEBUG - The client accepts */*, using 'text' from any
+2024-05-20 14:29:59,728 - DEBUG - Sanic-CORS: Request to '/hesderim_21/&env=ppr' matches CORS resource '/*'. Using options: {'origins': ['.*'], 'methods': 'DELETE, GET, HEAD, OPTIONS, POST', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': '/*', 'intercept_exceptions': True, 'always_send': True}
+2024-05-20 14:29:59,729 - DEBUG - Sanic-CORS: CORS was handled in the exception handler, skipping
+2024-05-20 14:29:59,729 - INFO - 
+2024-05-20 14:30:12,541 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:30:12,541 - DEBUG - executing <function connect.<locals>.connector at 0x000002DC77FF9F70>
+2024-05-20 14:30:12,541 - DEBUG - operation <function connect.<locals>.connector at 0x000002DC77FF9F70> completed
+2024-05-20 14:30:12,541 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DC77FFD120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:30:12,541 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DC77FFD120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:30:12,541 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002DC77FFD120>)
+2024-05-20 14:30:12,541 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002DC77FFD120>) completed
+2024-05-20 14:30:12,541 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002DC77FFD120>)
+2024-05-20 14:30:12,541 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002DC77FFD120>) completed
+2024-05-20 14:30:12,651 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: __main__                  \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: production, single worker \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:30:12,651 - WARNING - [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-05-20 14:30:13,502 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:30:14,514 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:30:14,530 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:30:14,577 - INFO - Starting worker [6560]
+2024-05-20 14:31:13,641 - ERROR - Sanic app name '__mp_main__' not found.
+App instantiation must occur outside if __name__ == '__main__' block or by using an AppLoader.
+See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2231, in get_app
+    return cls._app_registry[name]
+KeyError: '__main__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2231, in get_app
+    return cls._app_registry[name]
+KeyError: '__mp_main__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\serve.py", line 55, in worker_serve
+    app = app_loader.load()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\worker\loader.py", line 75, in load
+    return self.factory()
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2234, in get_app
+    return cls.get_app("__mp_main__", force_create=force_create)
+  File "D:\Teum4U\Hesderim_2_1\env_geoserver\.venv\lib\site-packages\sanic\app.py", line 2237, in get_app
+    raise SanicException(
+sanic.exceptions.SanicException: Sanic app name '__mp_main__' not found.
+App instantiation must occur outside if __name__ == '__main__' block or by using an AppLoader.
+See https://sanic.dev/en/guide/deployment/app-loader.html for more details.
+2024-05-20 14:31:13,641 - ERROR - Failed to restart processes: __TERMINATE_EARLY__
+2024-05-20 14:31:20,932 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:31:20,932 - DEBUG - executing <function connect.<locals>.connector at 0x0000027113C69F70>
+2024-05-20 14:31:20,932 - DEBUG - operation <function connect.<locals>.connector at 0x0000027113C69F70> completed
+2024-05-20 14:31:20,932 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000027113C6D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:31:20,932 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000027113C6D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:31:20,932 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000027113C6D120>)
+2024-05-20 14:31:20,932 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000027113C6D120>) completed
+2024-05-20 14:31:20,932 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000027113C6D120>)
+2024-05-20 14:31:20,932 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000027113C6D120>) completed
+2024-05-20 14:31:21,036 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: asinctest                 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: production, single worker \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:31:21,038 - WARNING - [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-05-20 14:31:21,956 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:31:22,960 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:31:22,960 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:31:23,031 - INFO - Starting worker [6752]
+2024-05-20 14:32:44,577 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:32:44,577 - DEBUG - executing <function connect.<locals>.connector at 0x0000015704299F70>
+2024-05-20 14:32:44,577 - DEBUG - operation <function connect.<locals>.connector at 0x0000015704299F70> completed
+2024-05-20 14:32:44,577 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001570429D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', [])
+2024-05-20 14:32:44,577 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000001570429D120>, 'CREATE TABLE IF NOT EXISTS processes (id INTEGER PRIMARY KEY, status TEXT)', []) completed
+2024-05-20 14:32:44,577 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001570429D120>)
+2024-05-20 14:32:44,577 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001570429D120>) completed
+2024-05-20 14:32:44,577 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001570429D120>)
+2024-05-20 14:32:44,577 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001570429D120>) completed
+2024-05-20 14:32:44,705 - INFO - 
+  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+  \u2502                         Sanic v23.12.1                         \u2502
+  \u2502               Goin' Fast @ http://127.0.0.1:8001               \u2502
+  \u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524
+  \u2502 [48;2;255;13;104m                     [0m \u2502         app: asinctest                 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2584\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588 \u2588\u2588    [0m \u2502        mode: production, single worker \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588                [0m \u2502      server: sanic, HTTP/1.1           \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m    \u2580\u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2584    [0m \u2502      python: 3.9.12                    \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m                \u2588\u2588   [0m \u2502    platform: Windows-10-10.0.17763-SP0 \u2502
+  \u2502 [38;2;255;255;255;48;2;255;13;104m   \u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2580    [0m \u2502 auto-reload: enabled                   \u2502
+  \u2502 [48;2;255;13;104m                     [0m \u2502    packages: sanic-routing==23.12.0    \u2502
+  \u2502 Build Fast. Run Fast. \u2502                                        \u2502
+  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+
+2024-05-20 14:32:44,705 - WARNING - [01;33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+2024-05-20 14:32:45,595 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:32:46,433 - DEBUG - Using proactor: IocpProactor
+2024-05-20 14:32:46,495 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:32:46,576 - INFO - Starting worker [15960]
+2024-05-20 14:33:19,240 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:33:19,300 - INFO - Starting worker [15452]
+2024-05-20 14:33:24,313 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:33:24,605 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:33:24,607 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:33:24,716 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:33:24,717 - INFO - coverage layer exists
+2024-05-20 14:33:24,719 - DEBUG - executing <function connect.<locals>.connector at 0x000002DE9A0D7940>
+2024-05-20 14:33:24,719 - DEBUG - operation <function connect.<locals>.connector at 0x000002DE9A0D7940> completed
+2024-05-20 14:33:24,720 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DE97420E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',))
+2024-05-20 14:33:24,721 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DE97420E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',)) completed
+2024-05-20 14:33:24,721 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x000002DE9A0E85E0>)
+2024-05-20 14:33:24,721 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x000002DE9A0E85E0>) completed
+2024-05-20 14:33:24,721 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002DE9A0E85E0>)
+2024-05-20 14:33:24,721 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002DE9A0E85E0>) completed
+2024-05-20 14:33:24,722 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DE97420E40>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", ('4189',))
+2024-05-20 14:33:24,723 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DE97420E40>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", ('4189',)) completed
+2024-05-20 14:33:24,724 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002DE97420E40>)
+2024-05-20 14:33:24,736 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002DE97420E40>) completed
+2024-05-20 14:33:24,737 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002DE97420E40>)
+2024-05-20 14:33:24,737 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002DE97420E40>) completed
+2024-05-20 14:33:24,741 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:33:24,810 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:33:24,813 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:33:25,145 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/layers.json HTTP/1.1" 200 None
+2024-05-20 14:33:25,160 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:33:25,176 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr.json HTTP/1.1" 200 None
+2024-05-20 14:33:25,176 - INFO - ws exists
+2024-05-20 14:33:25,176 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:33:25,176 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5.json HTTP/1.1" 200 None
+2024-05-20 14:33:25,176 - INFO - coveragestore exists
+2024-05-20 14:33:25,192 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:33:25,192 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:33:25,192 - INFO - coverage layer exists
+2024-05-20 14:33:25,192 - DEBUG - executing <function connect.<locals>.connector at 0x000002DE9A0D7940>
+2024-05-20 14:33:25,192 - DEBUG - operation <function connect.<locals>.connector at 0x000002DE9A0D7940> completed
+2024-05-20 14:33:25,192 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DE97420E40>, "UPDATE processes SET status = 'done' WHERE id = ?", ('4189',))
+2024-05-20 14:33:25,192 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x000002DE97420E40>, "UPDATE processes SET status = 'done' WHERE id = ?", ('4189',)) completed
+2024-05-20 14:33:25,192 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002DE97420E40>)
+2024-05-20 14:33:25,207 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002DE97420E40>) completed
+2024-05-20 14:33:25,207 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002DE97420E40>)
+2024-05-20 14:33:25,207 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002DE97420E40>) completed
+2024-05-20 14:34:32,698 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:34:32,745 - INFO - Starting worker [5028]
+2024-05-20 14:34:38,611 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:34:38,691 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:34:38,693 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:34:38,806 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:34:38,807 - INFO - coverage layer exists
+2024-05-20 14:34:38,809 - DEBUG - executing <function connect.<locals>.connector at 0x0000014503A98940>
+2024-05-20 14:34:38,810 - DEBUG - operation <function connect.<locals>.connector at 0x0000014503A98940> completed
+2024-05-20 14:34:38,811 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014500DEEE40>, 'SELECT status FROM processes WHERE id = ?', ('4189',))
+2024-05-20 14:34:38,812 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000014500DEEE40>, 'SELECT status FROM processes WHERE id = ?', ('4189',)) completed
+2024-05-20 14:34:38,812 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000014503ABE6C0>)
+2024-05-20 14:34:38,812 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000014503ABE6C0>) completed
+2024-05-20 14:34:38,813 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014503ABE6C0>)
+2024-05-20 14:34:38,813 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000014503ABE6C0>) completed
+2024-05-20 14:34:38,813 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014500DEEE40>)
+2024-05-20 14:34:38,813 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000014500DEEE40>) completed
+2024-05-20 14:36:18,517 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:36:18,580 - INFO - Starting worker [6048]
+2024-05-20 14:36:22,704 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:36:22,763 - INFO - Starting worker [16308]
+2024-05-20 14:36:27,500 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:36:27,649 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:36:27,652 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:36:27,763 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:36:27,763 - INFO - coverage layer exists
+2024-05-20 14:36:27,765 - DEBUG - executing <function connect.<locals>.connector at 0x00000248CBDDEF70>
+2024-05-20 14:36:27,766 - DEBUG - operation <function connect.<locals>.connector at 0x00000248CBDDEF70> completed
+2024-05-20 14:36:27,766 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',))
+2024-05-20 14:36:27,767 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',)) completed
+2024-05-20 14:36:27,767 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000248CC226570>)
+2024-05-20 14:36:27,767 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000248CC226570>) completed
+2024-05-20 14:36:27,767 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000248CC226570>)
+2024-05-20 14:36:27,768 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000248CC226570>) completed
+2024-05-20 14:36:27,768 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000248C9500E40>)
+2024-05-20 14:36:27,768 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000248C9500E40>) completed
+2024-05-20 14:37:06,741 - INFO - Hesderim - id: 41891, env: ppr
+2024-05-20 14:37:06,745 - ERROR - No Hesder found under the ID:41891
+2024-05-20 14:37:06,747 - DEBUG - executing <function connect.<locals>.connector at 0x00000248CC202A60>
+2024-05-20 14:37:06,748 - DEBUG - operation <function connect.<locals>.connector at 0x00000248CC202A60> completed
+2024-05-20 14:37:06,748 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, 'SELECT status FROM processes WHERE id = ?', ('41891',))
+2024-05-20 14:37:06,749 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, 'SELECT status FROM processes WHERE id = ?', ('41891',)) completed
+2024-05-20 14:37:06,749 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000248CC2267A0>)
+2024-05-20 14:37:06,749 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000248CC2267A0>) completed
+2024-05-20 14:37:06,750 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000248CC2267A0>)
+2024-05-20 14:37:06,750 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000248CC2267A0>) completed
+2024-05-20 14:37:06,750 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", ('41891',))
+2024-05-20 14:37:06,753 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", ('41891',)) completed
+2024-05-20 14:37:06,753 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000248C9500E40>)
+2024-05-20 14:37:06,760 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000248C9500E40>) completed
+2024-05-20 14:37:06,761 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000248C9500E40>)
+2024-05-20 14:37:06,761 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000248C9500E40>) completed
+2024-05-20 14:37:06,767 - INFO - Hesderim - id: 41891, env: ppr
+2024-05-20 14:37:06,809 - ERROR - No Hesder found under the ID:41891
+2024-05-20 14:37:06,811 - DEBUG - executing <function connect.<locals>.connector at 0x00000248CC202A60>
+2024-05-20 14:37:06,815 - DEBUG - operation <function connect.<locals>.connector at 0x00000248CC202A60> completed
+2024-05-20 14:37:06,816 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, "UPDATE processes SET status = 'done' WHERE id = ?", ('41891',))
+2024-05-20 14:37:06,819 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000248C9500E40>, "UPDATE processes SET status = 'done' WHERE id = ?", ('41891',)) completed
+2024-05-20 14:37:06,819 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000248C9500E40>)
+2024-05-20 14:37:06,828 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000248C9500E40>) completed
+2024-05-20 14:37:06,833 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000248C9500E40>)
+2024-05-20 14:37:06,834 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000248C9500E40>) completed
+2024-05-20 14:37:29,623 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:37:29,670 - INFO - Starting worker [10568]
+2024-05-20 14:37:38,300 - INFO - Hesderim - id: 41891, env: ppr
+2024-05-20 14:37:38,359 - ERROR - No Hesder found under the ID:41891
+2024-05-20 14:37:38,363 - DEBUG - executing <function connect.<locals>.connector at 0x00000234C10EC5E0>
+2024-05-20 14:37:38,364 - DEBUG - operation <function connect.<locals>.connector at 0x00000234C10EC5E0> completed
+2024-05-20 14:37:38,365 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, 'SELECT status FROM processes WHERE id = ?', ('41891',))
+2024-05-20 14:37:38,365 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, 'SELECT status FROM processes WHERE id = ?', ('41891',)) completed
+2024-05-20 14:37:38,366 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000234C10F75E0>)
+2024-05-20 14:37:38,366 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000234C10F75E0>) completed
+2024-05-20 14:37:38,366 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000234C10F75E0>)
+2024-05-20 14:37:38,366 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000234C10F75E0>) completed
+2024-05-20 14:37:38,367 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE68F120>)
+2024-05-20 14:37:38,367 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE68F120>) completed
+2024-05-20 14:37:47,568 - INFO - Hesderim - id: 418911, env: ppr
+2024-05-20 14:37:47,570 - ERROR - No Hesder found under the ID:418911
+2024-05-20 14:37:47,572 - DEBUG - executing <function connect.<locals>.connector at 0x00000234C10EC940>
+2024-05-20 14:37:47,573 - DEBUG - operation <function connect.<locals>.connector at 0x00000234C10EC940> completed
+2024-05-20 14:37:47,573 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, 'SELECT status FROM processes WHERE id = ?', ('418911',))
+2024-05-20 14:37:47,573 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, 'SELECT status FROM processes WHERE id = ?', ('418911',)) completed
+2024-05-20 14:37:47,574 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000234C10F75E0>)
+2024-05-20 14:37:47,574 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000234C10F75E0>) completed
+2024-05-20 14:37:47,574 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000234C10F75E0>)
+2024-05-20 14:37:47,574 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000234C10F75E0>) completed
+2024-05-20 14:37:47,575 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", ('418911',))
+2024-05-20 14:37:47,577 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, "INSERT INTO processes (id, status) VALUES (?, 'in process')", ('418911',)) completed
+2024-05-20 14:37:47,577 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000234BE68F120>)
+2024-05-20 14:37:47,584 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000234BE68F120>) completed
+2024-05-20 14:37:47,584 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE68F120>)
+2024-05-20 14:37:47,585 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE68F120>) completed
+2024-05-20 14:37:47,589 - INFO - Hesderim - id: 418911, env: ppr
+2024-05-20 14:37:47,604 - ERROR - No Hesder found under the ID:418911
+2024-05-20 14:37:47,605 - DEBUG - executing <function connect.<locals>.connector at 0x00000234C10EC5E0>
+2024-05-20 14:37:47,606 - DEBUG - operation <function connect.<locals>.connector at 0x00000234C10EC5E0> completed
+2024-05-20 14:37:47,606 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE400E40>, "UPDATE processes SET status = 'done' WHERE id = ?", ('418911',))
+2024-05-20 14:37:47,608 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE400E40>, "UPDATE processes SET status = 'done' WHERE id = ?", ('418911',)) completed
+2024-05-20 14:37:47,609 - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000234BE400E40>)
+2024-05-20 14:37:47,616 - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x00000234BE400E40>) completed
+2024-05-20 14:37:47,618 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE400E40>)
+2024-05-20 14:37:47,619 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE400E40>) completed
+2024-05-20 14:37:48,641 - INFO - Hesderim - id: 418911, env: ppr
+2024-05-20 14:37:48,646 - ERROR - No Hesder found under the ID:418911
+2024-05-20 14:37:48,649 - DEBUG - executing <function connect.<locals>.connector at 0x00000234C10EC5E0>
+2024-05-20 14:37:48,650 - DEBUG - operation <function connect.<locals>.connector at 0x00000234C10EC5E0> completed
+2024-05-20 14:37:48,650 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, 'SELECT status FROM processes WHERE id = ?', ('418911',))
+2024-05-20 14:37:48,651 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000234BE68F120>, 'SELECT status FROM processes WHERE id = ?', ('418911',)) completed
+2024-05-20 14:37:48,651 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000234C10F7650>)
+2024-05-20 14:37:48,651 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000234C10F7650>) completed
+2024-05-20 14:37:48,652 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000234C10F7650>)
+2024-05-20 14:37:48,652 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000234C10F7650>) completed
+2024-05-20 14:37:48,652 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE68F120>)
+2024-05-20 14:37:48,658 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000234BE68F120>) completed
+2024-05-20 14:38:47,921 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:38:47,988 - INFO - Starting worker [14176]
+2024-05-20 14:38:50,092 - INFO - Hesderim - id: 418911, env: ppr
+2024-05-20 14:38:50,155 - ERROR - No Hesder found under the ID:418911
+2024-05-20 14:38:50,157 - DEBUG - executing <function connect.<locals>.connector at 0x0000028B9DA86DC0>
+2024-05-20 14:38:50,158 - DEBUG - operation <function connect.<locals>.connector at 0x0000028B9DA86DC0> completed
+2024-05-20 14:38:50,158 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000028B9BECF120>, 'SELECT status FROM processes WHERE id = ?', ('418911',))
+2024-05-20 14:38:50,159 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000028B9BECF120>, 'SELECT status FROM processes WHERE id = ?', ('418911',)) completed
+2024-05-20 14:38:50,159 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000028B9E93F6C0>)
+2024-05-20 14:38:50,160 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000028B9E93F6C0>) completed
+2024-05-20 14:38:50,160 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000028B9E93F6C0>)
+2024-05-20 14:38:50,160 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000028B9E93F6C0>) completed
+2024-05-20 14:38:50,160 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000028B9BECF120>)
+2024-05-20 14:38:50,160 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000028B9BECF120>) completed
+2024-05-20 14:38:51,987 - INFO - Hesderim - id: 418911, env: ppr
+2024-05-20 14:38:51,989 - ERROR - No Hesder found under the ID:418911
+2024-05-20 14:38:51,991 - DEBUG - executing <function connect.<locals>.connector at 0x0000028B9E921940>
+2024-05-20 14:38:51,992 - DEBUG - operation <function connect.<locals>.connector at 0x0000028B9E921940> completed
+2024-05-20 14:38:51,992 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000028B9BECF120>, 'SELECT status FROM processes WHERE id = ?', ('418911',))
+2024-05-20 14:38:51,992 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000028B9BECF120>, 'SELECT status FROM processes WHERE id = ?', ('418911',)) completed
+2024-05-20 14:38:51,993 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000028B9E93F6C0>)
+2024-05-20 14:38:51,993 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000028B9E93F6C0>) completed
+2024-05-20 14:38:51,993 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000028B9E93F6C0>)
+2024-05-20 14:38:51,993 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000028B9E93F6C0>) completed
+2024-05-20 14:38:51,994 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000028B9BECF120>)
+2024-05-20 14:38:51,994 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000028B9BECF120>) completed
+2024-05-20 14:40:09,462 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:40:09,526 - INFO - Starting worker [15312]
+2024-05-20 14:40:19,031 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:40:19,100 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:40:19,102 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:40:19,212 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:40:19,213 - INFO - coverage layer exists
+2024-05-20 14:40:19,215 - DEBUG - executing <function connect.<locals>.connector at 0x0000024A434AFC10>
+2024-05-20 14:40:19,215 - DEBUG - operation <function connect.<locals>.connector at 0x0000024A434AFC10> completed
+2024-05-20 14:40:19,216 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000024A40BC0E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',))
+2024-05-20 14:40:19,216 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x0000024A40BC0E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',)) completed
+2024-05-20 14:40:19,217 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000024A438F5880>)
+2024-05-20 14:40:19,217 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x0000024A438F5880>) completed
+2024-05-20 14:40:19,217 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000024A438F5880>)
+2024-05-20 14:40:19,217 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000024A438F5880>) completed
+2024-05-20 14:40:19,218 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000024A40BC0E40>)
+2024-05-20 14:40:19,218 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000024A40BC0E40>) completed
+2024-05-20 14:40:47,231 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:40:47,278 - INFO - Starting worker [6328]
+2024-05-20 14:40:57,635 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:40:57,703 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:40:57,710 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:40:57,824 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:40:57,825 - INFO - coverage layer exists
+2024-05-20 14:40:57,827 - DEBUG - executing <function connect.<locals>.connector at 0x00000242AC0EB8B0>
+2024-05-20 14:40:57,828 - DEBUG - operation <function connect.<locals>.connector at 0x00000242AC0EB8B0> completed
+2024-05-20 14:40:57,828 - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000242A9400E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',))
+2024-05-20 14:40:57,829 - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Connection object at 0x00000242A9400E40>, 'SELECT status FROM processes WHERE id = ?', ('4189',)) completed
+2024-05-20 14:40:57,830 - DEBUG - executing functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000242AC0FA7A0>)
+2024-05-20 14:40:57,830 - DEBUG - operation functools.partial(<built-in method fetchone of sqlite3.Cursor object at 0x00000242AC0FA7A0>) completed
+2024-05-20 14:40:57,830 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000242AC0FA7A0>)
+2024-05-20 14:40:57,830 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x00000242AC0FA7A0>) completed
+2024-05-20 14:40:57,830 - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x00000242A9400E40>)
+2024-05-20 14:40:57,831 - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x00000242A9400E40>) completed
+2024-05-20 14:41:45,431 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:41:45,501 - INFO - Starting worker [14904]
+2024-05-20 14:41:46,563 - INFO - Hesderim - id: 4189, env: ppr
+2024-05-20 14:41:46,638 - INFO - \\gisppr01\d$\GeoServer\data_dir\coverages\hesderim/20240306103551852_16C5.tif already exists
+2024-05-20 14:41:46,642 - DEBUG - Starting new HTTP connection (1): 10.6.70.120:8080
+2024-05-20 14:41:46,759 - DEBUG - http://10.6.70.120:8080 "GET /geoserver/rest/workspaces/hesderim_ppr/coveragestores/20240306103551852_16C5/coverages.json HTTP/1.1" 200 None
+2024-05-20 14:41:46,759 - INFO - coverage layer exists
+2024-05-20 14:51:09,885 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:51:09,937 - INFO - Starting worker [16136]
+2024-05-20 14:51:12,962 - DEBUG - Using selector: SelectSelector
+2024-05-20 14:51:13,025 - INFO - Starting worker [2488]
