@@ -715,6 +715,10 @@ class Publish_Hsederim(object):
             if (os.path.exists(layerPath)):
                 logging.info("{} already exists".format(layerPath))
             else:
+                logging.info("{} not found".format(layerPath))
+                self.responseMessage.update_message(
+                    new_message=f"raster not found", new_response_code=400)
+                
                 return self.responseMessage.send_response_as_dict()
                 
             try:

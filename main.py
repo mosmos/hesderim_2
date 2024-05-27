@@ -51,17 +51,18 @@ async def publish_hesder(sanic_req):
         if not id:
             return response.json({"error": "id is required"}, status=400)
     
-        print ("publish:","env:", environment,"ID:",id)
+        print ("@ publish:","env:", environment,"ID:",id)
 
         # check if the layer allready exists
         check_object = publish_hesderim_api.check_publish_hesder(id, environment)
 
         if check_object['Response Code']==304:
+            print ("@ allready exists , delete row","ID:",id)
             # DELETE FROM processes WHERE id = 1;
-            async with aiosqlite.connect(DB_PATH) as db:
+            '''async with aiosqlite.connect(DB_PATH) as db:
                 async with db.execute("DELETE FROM processes WHERE id = ?", (id)):
-                    await db.commit()
-            return  response.json(check_object)
+                    await db.commit()'''
+            return  response.json(check_object,status=200)
         
         # if the layer is not exists than we have to create it and register the status to sqlite.DB
         async with aiosqlite.connect(DB_PATH) as db:
@@ -69,7 +70,7 @@ async def publish_hesder(sanic_req):
                 row = await cursor.fetchone()
                 if row:
                     job_status = row[0]
-                    return response.json({"id": id, "message": job_status}, status=200)
+                    return response.json({"id": id, "message": job_status}, status=201)
 
             await db.execute("INSERT INTO processes (id, job_status) VALUES (?, 'in process')", (id,))
             await db.commit()
