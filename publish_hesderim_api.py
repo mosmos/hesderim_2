@@ -718,7 +718,6 @@ class Publish_Hsederim(object):
                 logging.info("{} not found".format(layerPath))
                 self.responseMessage.update_message(
                     new_message=f"raster not found", new_response_code=400)
-                
                 return self.responseMessage.send_response_as_dict()
                 
             try:
@@ -728,6 +727,7 @@ class Publish_Hsederim(object):
             
             if cl_status == 500:
                 response_code = 500
+                msg = "Layer not found"
                 
             if cl_status == 200:
                 response_code = 304

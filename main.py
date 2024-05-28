@@ -64,7 +64,8 @@ async def publish_hesder(sanic_req):
                     await db.commit()'''
             return  response.json(check_object,status=200)
         
-        # if the layer is not exists than we have to create it and register the status to sqlite.DB
+        # if the layer is not exists or the taster is not exists 
+        # than we have to create it and register the status to sqlite.DB
         async with aiosqlite.connect(DB_PATH) as db:
             async with db.execute("SELECT job_status FROM processes WHERE id = ?", (id)) as cursor:
                 row = await cursor.fetchone()
